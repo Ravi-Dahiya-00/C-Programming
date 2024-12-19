@@ -91,6 +91,46 @@ int main(){
     char character_variable='r';       // this char can only hold single character in it , we cannot put "ravi" in it 
     printf("%c",character_variable);
 
+
+
+
+    // ASCII VALUE 
+    // every character has a ASCII value that is different for different characters.
+
+    char ascii_character='A';               // 65 for A and 97 for a 
+    printf("%d",ascii_character);             
+
+     char ascii_character='@';
+    printf("%d",ascii_character);
+
+
+
+// char takes 1 byte
+// int takes 4bytes
+
+    // Short data type : 
+                        // It can store int only between -32768 to 32767
+        // this takes 2 bytes (16bits) in the memory when it creates a box
+        // it can store 2**n numbers here it can store 2**16 = 65536 it is divided into negative and positive to take these limits
+        short short_number=232;
+        printf("%d",short_number);
+
+
+    
+    // long data type:
+                    // in past it was used to store large values when int was not capable of holding large values
+                // it takes 8bytes
+        long long_number=12342323;
+        printf("%d",long_number);
+
+
+    // long long data type:
+                            // it can store so much big values 
+        // it takes 
+        long long longest_number=1238998931;
+        printf("%d",longest_number);
+        
+
     return 0;
 
 }
