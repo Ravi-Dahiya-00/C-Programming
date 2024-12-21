@@ -47,7 +47,7 @@ int main()
     printf("\n%d",x);
 
     x-=4;
-    printf("\n%d",x);
+    printf("\n%d",x);P
 
 
     // declaring a second variable and printing in new line with \n
