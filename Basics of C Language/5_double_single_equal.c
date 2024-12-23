@@ -131,6 +131,27 @@ int main(){
     }
 
 
+
+
+
+
+
+
+
+
+// ternary operator 
+        // it is used to write if else in a single line , it is good for one and two conditions .
+
+        // even and odd by ternary operator 
+
+        int ternary_number;
+        printf("\n Enter a number to check even odd by ternary : ");
+        scanf("%d",&ternary_number);
+
+        // expression1 ? expression2 : expression3
+        ternary_number%2==0 ? printf("even number ") : printf("odd number ");
+
+        
     
     return 0;
 }
