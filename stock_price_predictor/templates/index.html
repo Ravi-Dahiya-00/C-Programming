@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Predictor</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="welcome">
+                <h1 class="animated-text">Welcome to Stock Price Predictor</h1>
+                <p>Predict whether your stock will go up or down based on real-time market data and analysis.</p>
+            </div>
+        </header>
+
+        <div class="content">
+            <form method="POST" action="/">
+                <label for="ticker">Enter Stock Ticker (e.g., RELIANCE.NS):</label>
+                <input type="text" id="ticker" name="ticker" required placeholder="Enter stock ticker">
+                <button type="submit" class="submit-btn">Get Prediction</button>
+            </form>
+
+            {% if stock_name %}
+                <div class="prediction">
+                    <h2>Stock Name: {{ stock_name }}</h2>
+                    <p>Current Price: ₹{{ current_price }}</p>
+                    <p><strong>Trend for Next 7-14 Days:</strong> {{ trend }}</p>
+                    <p><strong>Entry Point:</strong> ₹{{ entry_point }}</p>
+                    <p><strong>Target Point:</strong> ₹{{ target_point }}</p>
+                    <p><strong>Expected Profit/Loss:</strong> {{ profit_loss }}%</p>
+                </div>
+            {% elif error %}
+                <div class="error">
+                    <p>{{ error }}</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Stock Price Predictor | Made with 💻 by Ravi Yadav</p>
+        </footer>
+    </div>
+
+</body>
+</html>
