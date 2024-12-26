@@ -84,8 +84,34 @@ int main()
 
 
 
-    
+    // write gp 1,2,4,8,16,.......
 
+    int gp_counting,gp_number=1;
+    printf("\nEnter a number upto which you want to print a GP : ");
+    scanf("%d",&gp_counting);
+    for (int i=1;i<=gp_counting;i++)
+    {
+        printf("%d ",gp_number);
+        gp_number=2*gp_number;
+    }
+
+
+    // write gp 1,2,4,8,16,.......
+
+    int gp_counting2,gp_number2=3;
+    printf("\nEnter a number upto which you want to print a GP : ");
+    scanf("%d",&gp_counting2);
+    for (int i=1;i<=gp_counting2;i++)
+    {
+        printf("%d ",gp_number2);
+        gp_number2=4*gp_number2;
+    }
+
+
+    int ap_number;
+    printf("\nEnter a number for AP : ");
+    scanf("%d",&ap_number);
+    
 
 
 

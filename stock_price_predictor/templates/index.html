@@ -1,49 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Price Predictor</title>
-    <link rel="stylesheet" href="static/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Electronics - Buy the Best Gadgets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f7f7f7; /* Light Gray Background */
+      color: #333; /* Dark Gray Text */
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #1d3557; /* Deep Blue */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #457b9d; /* Soft Blue */
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #a8dadc; /* Light Cyan on hover */
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #1d3557;
+    }
+
+    section p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #666;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      color: #fff;
+      background-color: #e63946; /* Strong Red */
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .cta:hover {
+      background-color: #d62828; /* Darker Red on hover */
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      flex: 1;
+      min-width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      margin: 15px 0;
+      font-size: 1.4em;
+      color: #333;
+    }
+
+    .product p {
+      color: #888;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #1d3557;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #e63946;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <div class="welcome">
-                <h1 class="animated-text">Welcome to Stock Price Predictor</h1>
-                <p>Predict whether your stock will go up or down based on real-time market data and analysis.</p>
-            </div>
-        </header>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Our Electronics Store</h1>
+    <p>Your One-Stop Shop for the Latest Gadgets</p>
+  </header>
 
-        <div class="content">
-            <form method="POST" action="/">
-                <label for="ticker">Enter Stock Ticker (e.g., RELIANCE.NS):</label>
-                <input type="text" id="ticker" name="ticker" required placeholder="Enter stock ticker">
-                <button type="submit" class="submit-btn">Get Prediction</button>
-            </form>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-            {% if stock_name %}
-                <div class="prediction">
-                    <h2>Stock Name: {{ stock_name }}</h2>
-                    <p>Current Price: ₹{{ current_price }}</p>
-                    <p><strong>Trend for Next 7-14 Days:</strong> {{ trend }}</p>
-                    <p><strong>Entry Point:</strong> ₹{{ entry_point }}</p>
-                    <p><strong>Target Point:</strong> ₹{{ target_point }}</p>
-                    <p><strong>Expected Profit/Loss:</strong> {{ profit_loss }}%</p>
-                </div>
-            {% elif error %}
-                <div class="error">
-                    <p>{{ error }}</p>
-                </div>
-            {% endif %}
-        </div>
+  <!-- Main Content Section -->
+  <section id="products">
+    <h2>Our Top Products</h2>
+    <p>Explore the latest gadgets and electronics available at unbeatable prices.</p>
 
-        <footer>
-            <p>&copy; 2024 Stock Price Predictor | Made with 💻 by Ravi Yadav</p>
-        </footer>
+    <div class="products">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Bluetooth Earbuds">
+        <h3>Bluetooth Earbuds</h3>
+        <p>High-quality sound with a comfortable fit and long-lasting battery life.</p>
+        <a href="#" class="cta">View Details</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Headphones">
+        <h3>Headphones</h3>
+        <p>Experience immersive sound and noise-cancelling technology.</p>
+        <a href="#" class="cta">View Details</a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Portable Bluetooth Speakers">
+        <h3>Portable Bluetooth Speakers</h3>
+        <p>Compact and powerful, perfect for music on the go.</p>
+        <a href="#" class="cta">View Details</a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Smartwatches">
+        <h3>Smartwatches</h3>
+        <p>Stylish designs with fitness tracking and notifications.</p>
+        <a href="#" class="cta">View Details</a>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="LED Table Lamps">
+        <h3>LED Table Lamps</h3>
+        <p>Adjustable brightness and energy-efficient lighting for your workspace.</p>
+        <a href="#" class="cta">View Details</a>
+      </div>
     </div>
+  </section>
 
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are dedicated to providing you with the best electronics and gadgets at affordable prices. Our mission is to help you stay connected, active, and entertained with high-quality products that enhance your lifestyle.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions or need help? Feel free to reach out to us at:</p>
+    <p>Email: <a href="mailto:support@shop.com">support@shop.com</a></p>
+    <p>Phone: +91-123-456-7890</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Shop Electronics. All rights reserved.</p>
+  </footer>
+
+  <!-- Canvas for 3D Animation -->
+  <canvas id="canvas"></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script>
+    // GSAP Animations for Entrance and Page Elements
+    gsap.from("header h1", { opacity: 0, y: -100, duration: 1, delay: 0.5 });
+    gsap.from("header p", { opacity: 0, y: -50, duration: 1, delay: 1 });
+
+    gsap.from("nav a", {
+      opacity: 0,
+      y: -50,
+      stagger: 0.3,
+      duration: 1,
+      delay: 1.5,
+    });
+
+    gsap.from("section h2", { opacity: 0, y: 100, duration: 1, delay: 2 });
+    gsap.from("section p", { opacity: 0, y: 50, duration: 1, delay: 2.5 });
+
+    // Products Animation
+    gsap.from(".product", {
+      opacity: 0,
+      y: -100,
+      stagger: 0.2,
+      duration: 1.5,
+      delay: 3,
+    });
+
+    // Footer Animation
+    gsap.from("footer", { opacity: 0, y: 50, duration: 1, delay: 4 });
+
+    // Three.js Scene Setup for 3D Background Animation
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({
+      canvas: document.getElementById('canvas'),
+      antialias: true
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    const geometry = new THREE.BoxGeometry(1, 1, 1);
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
+    camera.position.z = 5;
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+
+      renderer.render(scene, camera);
+    };
+
+    animate();
+
+    // GSAP for Smooth Animation of 3D Cube
+    gsap.to(cube.position, {
+      x: 2,
+      duration: 2,
+      repeat: -1,
+      yoyo: true
+    });
+
+    gsap.to(cube.rotation, {
+      x: Math.PI * 2,
+      duration: 2,
+      repeat: -1,
+      yoyo: true
+    });
+
+    // Resize the canvas on window resize
+    window.addEventListener('resize', () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });
+  </script>
 </body>
 </html>

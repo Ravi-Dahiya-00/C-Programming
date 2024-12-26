@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Interactive Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      background-color: #1f1f1f;
+      color: white;
+    }
+
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    #navbar:hover {
+      background-color: #ff6600;
+      height: 100vh;
+    }
+
+    .section {
+      padding: 60px;
+      text-align: center;
+      background-color: #333;
+      margin-top: 80px;
+      transition: background-color 0.5s ease;
+    }
+
+    .section:hover {
+      background-color: #444;
+    }
+
+    #footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+    }
+
+    #footer:hover {
+      background-color: #ff6600;
+    }
+
+    .product-image {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      cursor: pointer;
+    }
+
+    .product-image:hover {
+      transform: scale(1.2);
+    }
+
+    #checkout-form, #contact-form {
+      margin-top: 20px;
+    }
+
+    #checkout-form input, #contact-form input, #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #checkout-form button, #contact-form button {
+      background-color: #ff6600;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #checkout-form button:hover, #contact-form button:hover {
+      background-color: #e55d00;
+    }
+
+    #loading-screen {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    #loading-screen.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="loading-screen">
+    <h2 style="color: white;">Loading...</h2>
+  </div>
+  
+  <div id="navbar">Hover Me for Animation</div>
+
+  <div class="section" id="section1">
+    <h2>Product 1: Smartwatches</h2>
+    <img id="product-image" class="product-image" src="https://via.placeholder.com/200" alt="Smartwatch">
+  </div>
+
+  <div class="section" id="section2">
+    <h2>Product 2: Bluetooth Earbuds</h2>
+    <img id="product-image" class="product-image" src="https://via.placeholder.com/200" alt="Bluetooth Earbuds">
+  </div>
+
+  <div class="section" id="section3">
+    <h2>Product 3: Portable Bluetooth Speakers</h2>
+    <img id="product-image" class="product-image" src="https://via.placeholder.com/200" alt="Bluetooth Speaker">
+  </div>
+
+  <div id="footer">
+    Hover Me for Footer Animation
+  </div>
+
+  <div id="checkout-form">
+    <h3>Checkout</h3>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <button>Submit</button>
+  </div>
+
+  <div id="contact-form">
+    <h3>Contact Us</h3>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Submit</button>
+  </div>
+
+
+  
+</body>
+</html>
