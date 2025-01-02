@@ -130,7 +130,7 @@ int main()
 
     printf("total interset is : %f\n",(principle*rate*time)/100);
 
-
+//hello
 
 
 
