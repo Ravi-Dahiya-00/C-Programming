@@ -2,7 +2,7 @@
 // gcc 1_basics.c
 // .\a
 
-
+//hello
 
 // link section
 #include <stdio.h>
