@@ -2,7 +2,7 @@
 // gcc 1_basics.c
 // .\a
 
-
+//hello friends 
 
 // link section
 #include <stdio.h>
@@ -130,7 +130,7 @@ int main()
 
     printf("total interset is : %f\n",(principle*rate*time)/100);
 
-
+//hello
 
 
 
