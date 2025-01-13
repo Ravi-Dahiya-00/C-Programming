@@ -30,6 +30,13 @@ int main(){
     
 
 
+
+
+
+
+
+
+
     // counting the sum of the digits
 
     int sum_number_input,sum=0;
@@ -151,6 +158,11 @@ int main(){
                                                             printf("\nFactorial of numbers upto this is : %d",factorial1);
 
                                                             }
+
+
+
+
+
 
 
     return 0;

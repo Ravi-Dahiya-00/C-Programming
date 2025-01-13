@@ -5,7 +5,7 @@ int main(){
     printf("enter radius : ");
     scanf("%f",&radius);                                 // here & gives the address of radius 
     float pi=3.14;
-    float area=pi * radius *radius ;
+    float area=pi * radius * radius ;
     printf("%f\n",area);
 
 
@@ -31,6 +31,8 @@ int main(){
 
 
 
+
+
 // finding reminder of two numbers
 
     int operator1,operator2;
@@ -45,6 +47,7 @@ int main(){
     operator_multiplication=operators_quotient*operator2;
     operator_reminder=operator1-operator_multiplication;
     printf("your reminder is : %d",operator_reminder);
+
 
 
 
@@ -65,14 +68,14 @@ int main(){
     int given_integer;
     printf("\n enter number of which you want to half:");
     scanf("%d",&given_integer);
-    float converted_integer = given_integer ;
+    float converted_integer = given_integer;
     float half_number = converted_integer/2;
     printf("\n half of the given number is :%f",half_number);
 
 
     // float to integer 
      float given_float_number,fractional_part;
-    printf("Enter the number you want to get its fractional part : ");
+    printf("\nEnter the number you want to get its fractional part : ");
     scanf("%f",&given_float_number);
 
     int converted_float=given_float_number;
@@ -80,7 +83,7 @@ int main(){
 
     fractional_part=given_float_number-converted_float;
 
-    printf("fractional part of the given number is : %f",fractional_part);
+    printf("\nfractional part of the given number is : %f",fractional_part);
 
     
 
@@ -89,7 +92,7 @@ int main(){
 
     // char data types (a to z and special characters and we can also store numbers in it )
     char character_variable='r';       // this char can only hold single character in it , we cannot put "ravi" in it 
-    printf("%c",character_variable);
+    printf("\n%c",character_variable);
 
 
 
@@ -98,10 +101,10 @@ int main(){
     // every character has a ASCII value that is different for different characters.
 
     char ascii_character='A';               // 65 for A and 97 for a 
-    printf("%d",ascii_character);             
+    printf("\n%d",ascii_character);             
 
-     char ascii_character='@';
-    printf("%d",ascii_character);
+     char ascii_character2='@';
+    printf("\n%d",ascii_character2);
 
 
 
@@ -113,7 +116,7 @@ int main(){
         // this takes 2 bytes (16bits) in the memory when it creates a box
         // it can store 2**n numbers here it can store 2**16 = 65536 it is divided into negative and positive to take these limits
         short short_number=232;
-        printf("%d",short_number);
+        printf("\n%d",short_number);
 
 
     
@@ -121,14 +124,14 @@ int main(){
                     // in past it was used to store large values when int was not capable of holding large values
                 // it takes 8bytes
         long long_number=12342323;
-        printf("%d",long_number);
+        printf("\n%d",long_number);
 
 
     // long long data type:
                             // it can store so much big values 
         // it takes 
         long long longest_number=1238998931;
-        printf("%d",longest_number);
+        printf("\n%d",longest_number);
         
 
     return 0;

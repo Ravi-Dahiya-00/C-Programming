@@ -70,10 +70,10 @@ int main()
     int a=10;
     int b=4;
 
-    printf("\n%d\n",a+b);                                          // addition
-    printf("%d\n",a-b);                                          // subtraction
-    printf("%d\n",a*b);                                          // multiplication
-    printf("%d\n",a/b);                                          // division  : it will give round of integer because %d means we are printing integer not a float no
+    printf("\n%d\n",a+b);                               // addition
+    printf("%d\n",a-b);                                // subtraction
+    printf("%d\n",a*b);                              // multiplication
+    printf("%d\n",a/b);                            // division  : it will give round of integer because %d means we are printing integer not a float no
 
 
     int data1=b*(a+b);
