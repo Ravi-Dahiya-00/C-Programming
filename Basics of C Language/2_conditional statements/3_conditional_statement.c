@@ -23,6 +23,14 @@ int main(){
 
 
 
+
+
+
+
+
+
+
+
     // divisible by 5 or not 
     int divisible_by_5;
     printf("\nenter a number you want to check is divisible by 5 or not : ");
@@ -34,6 +42,13 @@ int main(){
     else{
         printf("this number is not divisible by 5");
     }
+
+
+
+
+
+
+
 
 
 
@@ -52,7 +67,15 @@ int main(){
     }
 
 
-    // making a number absolute 
+
+
+
+
+
+
+
+
+    // making a number absolute (absolute means +ve)
     int absolute_number;
     printf("\nEnter a number you want to check absolute or not : ");
     scanf("%d",&absolute_number);
@@ -62,6 +85,12 @@ int main(){
     else{
         printf("%d",absolute_number*-1);
     }
+
+
+
+
+
+
 
 
 
@@ -90,6 +119,14 @@ int main(){
 
 
 
+
+
+
+
+
+
+
+
      // checking area of rectangle is greater or not then perimeter of rectangle
       int length_of_rectangle,breadth_of_rectangle,area_of_rectangle,perimeter_of_rectangle;
       printf("enter length of rectangle : ");
@@ -109,6 +146,8 @@ int main(){
       {
         printf("perimeter of rectangle is greater then area of rectangle.");
       }
+
+
 
 
 

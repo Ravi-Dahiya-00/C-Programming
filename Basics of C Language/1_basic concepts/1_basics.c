@@ -2,7 +2,8 @@
 // gcc 1_basics.c
 // .\a
 
-//hello friends 
+
+
 
 // link section
 #include <stdio.h>
@@ -10,11 +11,28 @@
 
 // include :
             // including something
+
+// Name --> PreProcessor Directive
+// Explanation --> Used to include Header files
+
+
+
+
 // stdio.h :
             // standard input output     header files
 
+// this stdio.h header defines three variable types,several macros , and a variety of input and output functions
+
+
+
+
 
 // printing statements in C.
+
+// main function :
+                // execution of code begins from main function
+    
+
 int main()
 {
     printf("hello world");
@@ -130,13 +148,13 @@ int main()
 
     printf("total interset is : %f\n",(principle*rate*time)/100);
 
-//hello
+
 
 
 
 
 
     return 0;
-
+// this statement shows the exit status of a function.
 
 }
