@@ -46,13 +46,46 @@ int main()
 
 
 
+// % is format data specifier , what type of data type we want to take as input and store to print.
+
+
+
+
+
+//   sizeof a tells how much a memory a data type or a variable takes 
+
+// how much bytes is this variable or data type is taking 
+    // this memory taken depends on the compiler it can differ with different compilers.
+    
+    int a12;
+    printf("\n variable takes memory of --> %d",sizeof(a12));
+    printf("\n int takes memory of --> %d",sizeof(int));
+
+
+    long int a123;
+    printf("\n long int variable takes memory of --> %d",sizeof(a123));
+
+    printf("\n float takes memory of --> %d",sizeof(float));
+
+    printf("\n double takes memory of --> %d",sizeof(double));
+
+    printf("\n char takes memory of --> %d",sizeof(char));
+
+    printf("\n long long int takes memory of --> %d",sizeof(long long int));
+
+    printf("\n short takes memory of --> %d",sizeof(short));
+
+
+
+
+
 
 // variables in C
 
     // declaration of variable 
     int x;                     // int for making a variable for storing a integer value
     x=6;                       // initializing value to x
-    printf("%d",x);
+    printf("\n%d",x);
 
 
     printf("\n");
@@ -110,9 +143,13 @@ int main()
 
 
 
+
+    // this float gives always upto 6 decimals but if we want to get upto some decimal place we can use %.2f
+
+
     float x1=10;
     float y1=4;
-    printf("%f\n",x1/y1);
+    printf("%.2f\n",x1/y1);
 
 
     float new_float= 5/2;                    // this will give 2.000 because 5 and 2 are int and it will give 2 and we are storing it into a float 
@@ -153,6 +190,21 @@ int main()
 
 
 
+
+
+
+
+    // %d  --> int 
+    // %f  --> float
+    // %c  --> char 
+    // %lf  --> cdouble 
+    // %s  --> string
+    // %ld  --> slongint
+
+
+
+// range of data types :
+            // data types a specific range upto which they can give correct answer after that we have to use another data type.
 
     return 0;
 // this statement shows the exit status of a function.
