@@ -52,28 +52,54 @@ int main()
 
 
 
-//   sizeof a tells how much a memory a data type or a variable takes 
-
-// how much bytes is this variable or data type is taking 
-    // this memory taken depends on the compiler it can differ with different compilers.
-    
-    int a12;
-    printf("\n variable takes memory of --> %d",sizeof(a12));
-    printf("\n int takes memory of --> %d",sizeof(int));
 
 
-    long int a123;
-    printf("\n long int variable takes memory of --> %d",sizeof(a123));
 
-    printf("\n float takes memory of --> %d",sizeof(float));
 
-    printf("\n double takes memory of --> %d",sizeof(double));
 
-    printf("\n char takes memory of --> %d",sizeof(char));
 
-    printf("\n long long int takes memory of --> %d",sizeof(long long int));
 
-    printf("\n short takes memory of --> %d",sizeof(short));
+    // Keywords : 
+                // keywords are the special predefined, reserved words used in programming that have special meaning to compiler.
+        
+                // these are part of syntax , cannot be used as identifiers 
+
+                // 32 keywords in C in (ISO C90 standard) but in c99 and c11 later version there are 44 keywords.
+
+
+
+
+
+
+    // Identifiers :
+                    // identifiers are the building blocks of a program .
+                    // identifiers are the unique name that are assigned to a variables , structs , functions , and other entities.
+                    // used to uniquely identify the entity within the program.
+                     
+                    // int age=10;     age is identifier assigned to a character type value.
+
+            
+
+//Relationship Between Identifiers and Variables :
+                                // An identifier is the name of a variable.
+                                // A variable is a type of identifier specifically used to store data.
+        
+// Key Differences
+// Aspect	                     Identifier	                                                       Variable
+// Definition	                    Name used to identify program elements.	                            Named memory location to store data.
+
+// Type                         	Doesn't have a type.                                            	Has a data type (int, float, etc.).
+
+// Example	                        age, salary, main, _index	                                        int age = 25;
+
+
+
+
+
+int age_identifier_variable;  // "age" is an identifier (no value yet).
+
+age_identifier_variable = 25;  // "age" is now a variable holding the value 25.
+
 
 
 
@@ -81,6 +107,9 @@ int main()
 
 
 // variables in C
+            // variable is an identifier which is used to store some value.
+            // variables can change during the execution of the program and update the value stored inside it.
+            
 
     // declaration of variable 
     int x;                     // int for making a variable for storing a integer value
@@ -107,11 +136,55 @@ int main()
     printf("\n%d",y);
 
 
+
+
+
+
+    // Constants : 
+                // It is similar to the variable but the constant only holds only one value during the program execution.
+
+                // created by 'const' keyword
+                // using #define preprocessor
+
+            const int constant_example=13;
+            #define CONSTANTNAME 10     //defining by #define
+            #define PI 3.14159 // Define a constant for pi
+
+              printf("Value of PI: %f\n", PI);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // literals in C
     // this we are doing \n for new line %d for printing integer these special characters are called literals.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Operators in C 
 
 
 
@@ -205,6 +278,8 @@ int main()
 
 // range of data types :
             // data types a specific range upto which they can give correct answer after that we have to use another data type.
+
+
 
     return 0;
 // this statement shows the exit status of a function.

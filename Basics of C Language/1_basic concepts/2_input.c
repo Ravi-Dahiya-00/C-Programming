@@ -90,6 +90,36 @@ int main(){
 
 
 
+
+
+
+    // characters in C : 
+                        // C language have 256 characters.
+
+    // types of set Character : 
+                        //  1.Alphabets 
+                                // UPPERCASE --> A - Z
+                                // lowercase --> a - z
+                        
+                        //  2.Digits 
+                                // 0 to 9
+                        
+                        // 3. special symbols
+                                //  , . ! ! # (  %  and so many 
+                            
+    // all the characters have there different ASCII values
+
+
+
+
+
+
+
+
+
+
+
+
     // char data types (a to z and special characters and we can also store numbers in it )
     char character_variable='r';       // this char can only hold single character in it , we cannot put "ravi" in it 
     printf("\n%c",character_variable);
