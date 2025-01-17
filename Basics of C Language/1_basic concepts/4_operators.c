@@ -2,39 +2,247 @@
 
 int main() {
 
-    // 1. Arithmetic Operators
-    // These are used for basic mathematical operations.
-    int a = 10, b = 3;
-    printf("Arithmetic Operators:\n");
-    printf("Addition (a + b): %d\n", a + b);      // Adds a and b
-    printf("Subtraction (a - b): %d\n", a - b);   // Subtracts b from a
-    printf("Multiplication (a * b): %d\n", a * b); // Multiplies a and b
-    printf("Division (a / b): %d\n", a / b);      // Divides a by b (integer division)
-    printf("Modulus (a %% b): %d\n\n", a % b);    // Gives the remainder of a divided by b
+
+
+// three types of operators :
+// 1.Unary operator
+// 2.Binary operator
+// Ternary operator
 
 
 
 
-    // 2. Relational Operators
-    // These are used to compare two values and return true (1) or false (0).
-    printf("Relational Operators:\n");
-    printf("a == b: %d\n", a == b); // Checks if a is equal to b
-    printf("a != b: %d\n", a != b); // Checks if a is not equal to b
-    printf("a > b: %d\n", a > b);   // Checks if a is greater than b
-    printf("a < b: %d\n", a < b);   // Checks if a is less than b
-    printf("a >= b: %d\n", a >= b); // Checks if a is greater than or equal to b
-    printf("a <= b: %d\n\n", a <= b); // Checks if a is less than or equal to b
+
+    // 1.Unary Operator :
+            // These operate on a single operand.
+
+            // unary minus : -
+            int unary_minus=34;
+                unary_minus=-unary_minus;
+                printf("\n unary minus did this : %d",unary_minus);
+                
+                int d = 7;
+                printf("Unary Operators:\n");
+                printf("Initial value of d: %d\n", d); 
+                printf("After d++ (post-increment): %d\n", d++); // Returns d, then increments
+
+                int a1=10,b1=11;
+                a1=b1++;
+                printf("\nnow value : %d",a1);     // this will give 11 because first value is assigned to a1 of b1 then b1 has increment of 1
+                printf("\nsome_different_case : %d",b1);          
+                
+                printf("\nValue of d now: %d\n", d);
+                printf("After ++d (pre-increment): %d\n", ++d); // Increments, then returns d
+                printf("After d-- (post-decrement): %d\n", d--); // Returns d, then decrements
+                printf("Value of d now: %d\n", d);
+                printf("After --d (pre-decrement): %d\n\n", --d); // Decrements, then returns d
+
+
+                // post --> first it will do its work it can be assigning,operations or anything only after this it will do increment or decrement.          first line will be executed then increment or decrement will happen.
+
+                // pre -->  first increment or decrement then line will be executed .
 
 
 
 
-    // 3. Logical Operators
-    // These are used to combine or invert conditions.
-    int x = 1, y = 0; // 1 means true, 0 means false
-    printf("Logical Operators:\n");
-    printf("x && y: %d\n", x && y); // Logical AND: true if both x and y are true             (return type of result is int)
-    printf("x || y: %d\n", x || y); // Logical OR: true if either x or y is true
-    printf("!x: %d\n\n", !x);       // Logical NOT: true if x is false, and vice versa
+
+
+
+
+
+
+                // Logical Operators
+                    // These are used to combine or invert conditions.
+                    int x = 1, y = 0; // 1 means true, 0 means false
+                    printf("Logical Operators:\n");
+                    printf("x && y: %d\n", x && y); // Logical AND: true if both x and y are true             (return type of result is int)
+                    printf("x || y: %d\n", x || y); // Logical OR: true if either x or y is true
+                    printf("!x: %d\n\n", !x);       // Logical NOT: true if x is false, and vice versa
+
+
+
+
+
+                
+                // address of (&)
+                // it retrieves the address of any operand.
+
+
+                // sizeof 
+                // it will give memory size in bits of any data type or of any variable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Binary Operators :
+
+
+                    // 1. Arithmetic Operators
+                    // These are used for basic mathematical operations.
+                    int a = 10, b = 3;
+                    printf("Arithmetic Operators:\n");
+                    printf("Addition (a + b): %d\n", a + b);      // Adds a and b
+                    printf("Subtraction (a - b): %d\n", a - b);   // Subtracts b from a
+                    printf("Multiplication (a * b): %d\n", a * b); // Multiplies a and b
+                    printf("Division (a / b): %d\n", a / b);      // Divides a by b (integer division)
+                    printf("Modulus (a %% b): %d\n\n", a % b);    // Gives the remainder of a divided by b
+                    // %% in the format string tells printf to print a literal %.
+
+                    // modulo operator can only be used with integer values not with floating values.
+                    // the sign it will give in answer it will be of first operand.
+                    
+
+                    // operator precedence -->  * / %   
+                                            // + -              and these are given priorities acc to question left to right.
+
+                    
+                    //  Relational Operators
+                    // These are used to compare two values and return true (1) or false (0).
+                    printf("Relational Operators:\n");
+                    printf("a == b: %d\n", a == b); // Checks if a is equal to b
+                    printf("a != b: %d\n", a != b); // Checks if a is not equal to b
+                    printf("a > b: %d\n", a > b);   // Checks if a is greater than b
+                    printf("a < b: %d\n", a < b);   // Checks if a is less than b
+                    printf("a >= b: %d\n", a >= b); // Checks if a is greater than or equal to b
+                    printf("a <= b: %d\n\n", a <= b); // Checks if a is less than or equal to b
+
+
+
+
+
+
+
+                //  Assignment Operators
+                    // These assign values to variables, with optional arithmetic.
+                    printf("Assignment Operators:\n");
+                    int c = 5; // Initial value
+                    printf("Initial value of c: %d\n", c);
+                    c += 3; // c = c + 3
+                    printf("After c += 3: %d\n", c);
+                    c -= 2; // c = c - 2
+                    printf("After c -= 2: %d\n", c);
+                    c *= 4; // c = c * 4
+                    printf("After c *= 4: %d\n", c);
+                    c /= 3; // c = c / 3
+                    printf("After c /= 3: %d\n", c);
+                    c %= 3; // c = c % 3
+                    printf("After c %%= 3: %d\n\n", c);
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+//number conversion binary to decimal and vice-versa
+
+
+// decimal number is having base = 10   ex=(123)10
+
+// binary number is having base = 2     ex=(123)2
+
+
+
+// formula
+//    N...........16        8          4             2            1
+
+
+
+// we have to write this series of this formula upto when the digits of the binary number is not finished.
+// we have to ignore all the numbers of the series which is getting 0 under this series.
+// we have to take all the numbers of series of only one.
+// then take all the numbers of the series which is getting one.
+// now sum all the numbers of the series which are above one.
+
+
+// binary to decimal
+
+// convert 1101010 to decimal 
+
+//  (1101010)2=  ()10
+
+
+
+// now solve this 
+
+//   1            1              0          1            0               1                 0
+//   64           32             16         8            4               2                 1
+
+
+// now forget all the numbers of series which are getting zero above it.
+// take all the numbers of series of one and sum all the numbers.
+
+//   64+32+8+2=106 
+// the decimal of 1101010 is 106.
+
+
+
+
+
+
+
+
+
+
+
+// decimal to binary.
+
+// convert 16 to binary
+
+
+//     16            8            4             2              1
+//     1             0            0             0              0
+
+// binary of 16 is 10000
+
+
+
+
+// convert 19 to binary
+
+
+//     16             8              4                2                1
+//      1             0              0                1                1
+
+// binary of 19 is 10011
+
+// we have to put one on those numbers that can make the sum equal to that number which we are converting to binary.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -102,36 +310,10 @@ int main() {
 //  so the output of the print(a&b) will be 4.
 
 
-    // 5. Assignment Operators
-    // These assign values to variables, with optional arithmetic.
-    printf("Assignment Operators:\n");
-    int c = 5; // Initial value
-    printf("Initial value of c: %d\n", c);
-    c += 3; // c = c + 3
-    printf("After c += 3: %d\n", c);
-    c -= 2; // c = c - 2
-    printf("After c -= 2: %d\n", c);
-    c *= 4; // c = c * 4
-    printf("After c *= 4: %d\n", c);
-    c /= 3; // c = c / 3
-    printf("After c /= 3: %d\n", c);
-    c %= 3; // c = c % 3
-    printf("After c %%= 3: %d\n\n", c);
+    
 
 
-
-
-    // 6. Unary Operators
-    // These operate on a single operand.
-    int d = 7;
-    printf("Unary Operators:\n");
-    printf("Initial value of d: %d\n", d);
-    printf("After d++ (post-increment): %d\n", d++); // Returns d, then increments
-    printf("Value of d now: %d\n", d);
-    printf("After ++d (pre-increment): %d\n", ++d); // Increments, then returns d
-    printf("After d-- (post-decrement): %d\n", d--); // Returns d, then decrements
-    printf("Value of d now: %d\n", d);
-    printf("After --d (pre-decrement): %d\n\n", --d); // Decrements, then returns d
+   
 
 
 
