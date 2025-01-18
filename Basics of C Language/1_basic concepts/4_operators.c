@@ -91,7 +91,7 @@ int main() {
 
                     // 1. Arithmetic Operators
                     // These are used for basic mathematical operations.
-                    int a = 10, b = 3;
+                    int a = 5, b = 4;
                     printf("Arithmetic Operators:\n");
                     printf("Addition (a + b): %d\n", a + b);      // Adds a and b
                     printf("Subtraction (a - b): %d\n", a - b);   // Subtracts b from a
@@ -282,14 +282,15 @@ int main() {
 
 
     printf("Bitwise Operators:\n");
-    printf("a & b: %d\n", a & b);   // Bitwise AND: Compares each bit of a and b
-    printf("a | b: %d\n", a | b);   // Bitwise OR: Compares each bit and sets to 1 if either bit is 1
-    printf("a ^ b: %d\n", a ^ b);   // Bitwise XOR: Sets each bit to 1 if the corresponding bits are different
-    printf("~a: %d\n", ~a);         // Bitwise Complement: Inverts all bits of a
     printf("a << 1: %d\n", a << 1); // Left shift: Shifts bits of a to the left by 1
     printf("a >> 1: %d\n\n", a >> 1); // Right shift: Shifts bits of a to the right by 1
 
 
+
+
+
+
+    printf("a & b: %d\n", a & b);   // Bitwise AND: Compares each bit of a and b
 
 
 //let's see how this print statement will be calculated.
@@ -310,14 +311,111 @@ int main() {
 //  so the output of the print(a&b) will be 4.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    printf("a | b: %d\n", a | b);   // Bitwise OR: Compares each bit and sets to 1 if either bit is 1
+
+
+//firstly this are converted into binary
+//    a   =    0   1    0    1                #5 in binary form
+//     b   =    0   1    0    0                #4 in binary form
+
+//    a|b  =    0   1    0    1                a|b in binary form
+//if only place is having 1 then it will be written as zero
+//zero will be return only when there are both zeroes in same line
+
+//now convert this 0101 into decimal form 
+// 8          4         2             1
+//0          1         0             1
+
+//decimal form if this 0101 will be 5
+//so the output of the print(a|b) will be 5.
     
 
 
-   
 
 
 
 
+
+
+
+
+
+//3. XOR bitwise operator
+    printf("a ^ b: %d\n", a ^ b);   // Bitwise XOR: Sets each bit to 1 if the corresponding bits are different
+
+
+//let's see how this print statement will be calculated.
+
+//firstly this are converted into binary
+//     a   =    0   1    0    1                #5 in binary form
+//     b   =    0   1    0    0                #4 in binary form
+
+//    a^b  =    0   0    0    1                a^b in binary form
+//it will give one only when both bits are different in same row.
+//gives zero when both are same bits 
+//now convert this 0001 into decimal form 
+// 8          4         2             1
+// 0          0         0             1
+
+//decimal form if this 0001 will be 1
+//so the output of the print(a^b) will be 1.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//4. NOT(compliment) bitwise operator
+    printf("~a: %d\n", ~a);         // Bitwise Complement: Inverts all bits of a
+
+//let's see how this print statement will be calculated.
+
+//   5    =   0     1        0          1
+//  ~5    =   1     0        1          0
+
+// 2's = 1's + 1   (2's is compliment of 2)
+//2's because 6 in binary form is written as          0    1     1     0
+//1's in binary form will be written as               1    0     0     1
+//one will also be added because 1 is also is 2's                      1
+                                            
+//this is - 6 stored in binary form                   1   0      1      0
+
+
+
+
+//short trick is that always add 1 in a and put - sign this will be NOT of that a.
+// a=8
+// print(-8)   #this will give -9.
+
+
+
+
+
+
+     
     // 7. Conditional (Ternary) Operator
     // Shorthand for if-else.
     printf("Ternary Operator:\n");
