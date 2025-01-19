@@ -38,7 +38,8 @@ int main() {
                 printf("After --d (pre-decrement): %d\n\n", --d); // Decrements, then returns d
 
 
-                // post --> first it will do its work it can be assigning,operations or anything only after this it will do increment or decrement.          first line will be executed then increment or decrement will happen.
+                // post --> first it will do its work it can be assigning,operations or anything only after this it will do increment or decrement.      \
+                      first line will be executed then increment or decrement will happen.
 
                 // pre -->  first increment or decrement then line will be executed .
 
@@ -274,16 +275,16 @@ int main() {
         //     ~	NOT(Compliment)                              	Inverts all the bits	                                       ~x	
         //                                                 0 to 1 and 1 to 0
 
-        //     <<	Zero fill left shift          	  Shift left by pushing zeros in from the right and 
-        //                                     let the leftmost bits fall off	                                         x << 2	
-
-        //    >>	Signed right shift	          Shift right by pushing copies of the leftmost bit in from the left,
-        //                                     and let the rightmost bits fall off                                       	x >> 2	'''
+        //     <<	Zero fill left shift          	  Shift left by pushing zeros in from the right and \
+                                            let the leftmost bits fall off	                                         x << 2	        \
+\
+             >>	Signed right shift	          Shift right by pushing copies of the leftmost bit in from the left, \
+                   \
+                                                  and let the rightmost bits fall off                                       	x >> 2	'''
 
 
     printf("Bitwise Operators:\n");
-    printf("a << 1: %d\n", a << 1); // Left shift: Shifts bits of a to the left by 1
-    printf("a >> 1: %d\n\n", a >> 1); // Right shift: Shifts bits of a to the right by 1
+
 
 
 
@@ -409,6 +410,84 @@ int main() {
 //short trick is that always add 1 in a and put - sign this will be NOT of that a.
 // a=8
 // print(-8)   #this will give -9.
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 5.   left shift : 
+                        // var << 2 
+                        // we have to shift this var by 2bits.
+
+        // if we have 10 and we have to convert it by 2 shifts 
+        //  10 << 2
+
+            // 10 -->      128          64          32               16           8              4                 2                  1
+        // bit of 10 -->    0            0           0                0           1              0                 1                  0
+
+// shifting by 2points-->   0           0           1                0           1              0                 0                  0
+
+// it will give 40.
+
+
+// shortcut to find : 
+                    // var * (2*n)     n--> value upto which we have to shift that digit here n is 2.
+
+
+
+  printf("a << 1: %d\n", a << 1); // Left shift: Shifts bits of a to the left by 1
+
+
+
+
+
+
+
+
+
+
+
+
+// 6.   right shift : 
+                        // var >> 2 
+                        // we have to shift this var by 2bits.
+
+        // if we have 10 and we have to convert it by 2 shifts in right
+        //  10 << 2
+
+            // 10 -->      128          64          32               16           8              4                 2                  1
+        // bit of 10 -->    0            0           0                0           1              0                 1                  0
+
+// shifting by 2points-->   0           0           0                0           0               0                1                  0
+
+// the first leading blocks is filled by 0's not by the digits we discarded from the right side.
+
+// it will give 2.
+
+
+// shortcut to find : 
+                    // var / (2*n)     n--> value upto which we have to shift that digit here n is 2.
+                    
+
+
+
+    printf("a >> 1: %d\n\n", a >> 1); // Right shift: Shifts bits of a to the right by 1
+
+
+
+
+
+
+
+     
 
 
 
