@@ -77,6 +77,13 @@ typedef unsigned int uint;
 
 
 
+
+
+
+
+
+
+
 // Data Types : 
     
     // 1. Integer :
@@ -91,8 +98,24 @@ typedef unsigned int uint;
 
     // int with 4bytes can store value in range from         -2,147,483,648  to  +2,147,483,647
 
-    // int with 2bytes can store value in range from         -32,768  to  +32,767
+    // int with 2bytes can store value in range from         -32,768  to  +32,767 (for signed integer) --> by default
 
+    
+    // if we specify unsigned int then no negative number only positive
+    // range -->   0 to 65535
+
+
+     unsigned int totalApples = 150; // Number of apples in stock
+    unsigned int applesSold = 45;  // Number of apples sold
+    unsigned int applesRemaining;  // Number of apples left in stock
+
+    // Calculate remaining apples
+    applesRemaining = totalApples - applesSold;
+
+    // Print the result
+    printf("Total Apples: %u\n", totalApples);
+    printf("Apples Sold: %u\n", applesSold);
+    printf("Apples Remaining: %u\n", applesRemaining);
 
 
 
@@ -112,7 +135,7 @@ typedef unsigned int uint;
                     // used to store decimal numbers (numbers with floating point values) with single precision.
 
 
-                    // Range  -->     1.2E-38 to 3.4+38
+                    // Range  -->     1.2E-38 to 3.4E+38
 
 
                     float_example=12.05;
@@ -147,11 +170,13 @@ typedef unsigned int uint;
             // the size of character is 1byte.
             // most basic data type in C.
             // it store a single character and it requires a single byte of memory in all most compilers.
-            // Range -->  ( -128 to 127 ) or ( 0 to 255 )
+            // Range -->  ( -128 to 127 ) --> for signed
+            //  ( 0 to 255 )  --> for unsigned
             // size --> 1byte
             
             char char_example='a';
-
+            printf("%c",char_example);
+            printf("%c",98);     // print b because it is the ascii value of b
 
 
     
