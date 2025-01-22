@@ -61,7 +61,12 @@ int main() {
                     printf("!x: %d\n\n", !x);       // Logical NOT: true if x is false, and vice versa
 
 
-
+        int logical_a=3 , logical_b=4 , logical_c =0 , logical_d=6 ,logical_e ;
+            logical_e=logical_a < logical_b || logical_c++;
+            printf("c=%d e=%d\n\n",logical_c,logical_e);
+            
+            // if a<b is true in or operator right hand side (c++) will not be operated 
+            // if a>b is false in or operator right hand side (c++) will not be operated 
 
 
                 

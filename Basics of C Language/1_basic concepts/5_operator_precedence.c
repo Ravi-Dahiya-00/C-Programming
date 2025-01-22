@@ -17,6 +17,10 @@ int main()
 
 
 
+// associativity is used according to the question a*b/c    first / then * because its associativity is from left to right and precedence of both * / is same .
+
+// precedence is priority and associativity is order 
+
 
     int a = 5, b = 10, c = 15, result;
 

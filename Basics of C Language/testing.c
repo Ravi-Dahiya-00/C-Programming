@@ -1,10 +1,8 @@
 #include <stdio.h>
 int main(){
 
- int c,i=10;
- double b=5.6;
-c=i+b;
-  printf("%d",c);
-
+ double d;
+  d=5%3&4+5*6;
+  printf("%f",d);
 return 0;
 }
