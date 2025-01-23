@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
 
- double d;
-  d=5%3&4+5*6;
-  printf("%f",d);
+ double d,a;
+  d=593.1333,a=111;
+  printf("%-10.2f,%d",d,a);
 return 0;
 }
