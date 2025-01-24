@@ -2,8 +2,21 @@
 
 int main()
 {
+
+// for loop
+    // entry controlled loop
+
+       //       1_step       2nd_step   4th_step
+    //      for(initialization;condition;update)
+    //        {
+    //              loop body;   3rd_step
+    //          }
     // int i=1 for declaring a variable i=1          , i<=10 jab tak         , i++ is equal to i=i+1  
     // initialization , condition  , increment/decrement
+
+
+
+    
     for (int i=1;i<=10;i++){
         printf("hello world\n");
     }
