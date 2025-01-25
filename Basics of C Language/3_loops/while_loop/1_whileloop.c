@@ -27,6 +27,14 @@ int main()
     // same in decrement 
 
 
+
+
+
+
+
+
+
+
    
     // while (i=20) printf("\nA computer buff!!");
             // this will give infinite loop because here i is now 20 and 20=20
