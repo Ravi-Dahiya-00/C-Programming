@@ -270,9 +270,9 @@ age_identifier_variable = 25;  // "age" is now a variable holding the value 25.
     // %d  --> int 
     // %f  --> float
     // %c  --> char 
-    // %lf  --> cdouble 
+    // %lf  --> double 
     // %s  --> string
-    // %ld  --> slongint
+    // %ld  --> longint
 
 
 

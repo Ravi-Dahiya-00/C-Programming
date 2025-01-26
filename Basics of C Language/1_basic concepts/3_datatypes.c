@@ -105,7 +105,7 @@ typedef unsigned int uint;
     // range -->   0 to 65535
 
 
-     unsigned int totalApples = 15023456; // Number of apples in stock
+    unsigned int totalApples = 15023456; // Number of apples in stock
     unsigned int applesSold = 45;  // Number of apples sold
     unsigned int applesRemaining;  // Number of apples left in stock
 
