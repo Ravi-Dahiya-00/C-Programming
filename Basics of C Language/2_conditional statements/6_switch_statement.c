@@ -89,7 +89,7 @@ int main()
             scanf("%d", &operation);
 
             printf("Enter two numbers: ");
-            scanf("%d %d", &num1, &num2);l
+            scanf("%d %d", &num1, &num2);
 
             // Switch to handle arithmetic operations
             switch (operation) {
