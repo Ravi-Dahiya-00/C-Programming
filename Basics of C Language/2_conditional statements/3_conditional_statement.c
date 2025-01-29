@@ -162,6 +162,17 @@ int main(){
 
 
 
+
+
+    float see1=2.3;
+    if (see1==2.3){
+        printf("\nHii");
+    }
+
+    else{
+        printf("\nkyu tumko kya laga tha itni jaldi hii bol dego vo");
+    }
+
       
     return 0;
 }
