@@ -104,7 +104,7 @@ int main(){
 
 
 
-    // profit and loss statement
+    // profit and loss statement program
     int selling_price,cost_price,profit_loss_statement;
     printf("enter selling price of your item : ");
     scanf("%d",&selling_price);
