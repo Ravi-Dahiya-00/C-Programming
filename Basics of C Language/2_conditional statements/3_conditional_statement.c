@@ -105,6 +105,7 @@ int main(){
 
 
     // profit and loss statement program
+
     int selling_price,cost_price,profit_loss_statement;
     printf("enter selling price of your item : ");
     scanf("%d",&selling_price);
@@ -145,7 +146,7 @@ int main(){
 
 
 
-     // checking area of rectangle is greater or not then perimeter of rectangle
+     // checking area of rectangle is greater or not then perimeter of rectangle using a program
       int length_of_rectangle,breadth_of_rectangle,area_of_rectangle,perimeter_of_rectangle;
       printf("enter length of rectangle : ");
       scanf("%d",&length_of_rectangle);
