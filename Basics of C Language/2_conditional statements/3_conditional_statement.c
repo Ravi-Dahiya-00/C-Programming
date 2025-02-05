@@ -116,14 +116,13 @@ int main(){
     profit_loss_statement=selling_price-cost_price;
 
 
-                        
-                        if (profit_loss_statement<0)
+                        if (profit_loss_statement==0){
+                            printf("you made no profit no loss on this item.");
+                        } 
+                        else if (profit_loss_statement<0)
                         {
                             printf("you made a loss in selling this item.");
                             printf("\nyour loss on this item: %d rs",profit_loss_statement);
-                        }
-                        if (profit_loss_statement==0){
-                            printf("you made no profit no loss on this item.");
                         }
                         else{
                             printf("you made a profit on this item.");

@@ -58,6 +58,8 @@ int main()
     int table_number;
     printf("enter a number of which table you want : ");
     scanf("%d",&table_number); 
+
+
     for (int i=1;i<=10;i++)
     {
         printf("%d * %d = %d\n",table_number,i,table_number*i);
@@ -75,10 +77,19 @@ int main()
     int first_number;
     printf("enter a number : ");
     scanf("%d",&first_number);
+
+
     for (int i=1;i<=2*first_number-1;i=i+2)
     {
         printf("%d ",i);
     }
+
+
+
+
+
+
+
 
 
 
@@ -107,6 +118,15 @@ int main()
         printf("%d ",gp_number);
         gp_number=2*gp_number;
     }
+
+
+
+
+
+
+
+
+
 
 
     // write gp 1,2,4,8,16,.......

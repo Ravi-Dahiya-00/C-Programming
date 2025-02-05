@@ -6,6 +6,12 @@ int main(){
         // single equal to assign some value to any variable 
         // double equal to check if the variable has the same value or not
 
+
+
+
+
+
+
     // age of ram, shyam, ajay is input , program to determine youngest of three
 
 
