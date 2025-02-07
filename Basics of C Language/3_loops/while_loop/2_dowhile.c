@@ -23,7 +23,7 @@ int main(){
                                                         {
                                                             input_number=input_number/10;
                                                             number_count=number_count+1;
-
+                                                            
                                                         }
                                                             printf("%d",number_count+1);
 
