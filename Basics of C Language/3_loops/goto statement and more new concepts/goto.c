@@ -1,10 +1,10 @@
-// learn in unit3 again about goto after return
+// learn in unit3 again about goto after return statement
 
 #include <stdio.h>
 int main()
 {
     int x;
-    printf("enter a number : %d",&x);
+    scanf("%d",&x);
 
     if (x%2==0)
     {

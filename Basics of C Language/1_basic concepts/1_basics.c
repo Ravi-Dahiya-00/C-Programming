@@ -281,6 +281,50 @@ age_identifier_variable = 25;  // "age" is now a variable holding the value 25.
 
 
 
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+    puts("Welcome to C programming!");
+    // Purpose: Displays a string followed by a newline without /n.
+    
+
+
+
+    char name[50];
+    printf("Enter your name: ");
+    gets(name);
+    printf("Hello, %s!\n", name);
+    // Purpose: Reads an entire line of input, including spaces, until a newline is encountered.
+
+
+
+
+
+    char ch_1 = getchar();
+    // printf("%c",ch_1);
+    // getchar(): Reads a single character,first given character only.
+
+    putchar(ch_1);
+    // putchar(): Writes a single character,only first given character.
+
+
+
+
+
+
+    // int age = "twenty";              // Error: Incompatible data type
+
+
     return 0;
 // this statement shows the exit status of a function.
 
