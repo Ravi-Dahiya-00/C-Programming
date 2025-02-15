@@ -122,5 +122,48 @@ int main() {
         printf("The number is NOT 5.\n");
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    int a_except = -1;
+    unsigned int b_except = 1;
+    if (a_except < b_except) {  // This may not work as expected
+        printf("Unexpected behavior!\n");
+    }
+    else
+    {
+        printf("hello");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    unsigned int x_except = 0;
+    x_except--;
+    printf("%u\n", x_except);  // Output: 4294967295 (wrap-around)
+
+    
     return 0;
 }
