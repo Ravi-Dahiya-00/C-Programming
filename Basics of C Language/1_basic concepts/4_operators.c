@@ -445,6 +445,9 @@ int main() {
 
 // shortcut to find : 
                     // var * (2*n)     n--> value upto which we have to shift that digit here n is 2.
+                    // it is easy method for mcq.
+
+                    
 
 
 
