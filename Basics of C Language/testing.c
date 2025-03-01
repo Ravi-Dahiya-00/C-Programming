@@ -2,16 +2,9 @@
 #include <stdio.h>
 int main()
 {
-float a,c;
-scanf("%f",&a);
-
-int b;
-b=a;
-// printf("%d",b);
-
-c=a-b;
-c=c*10;
-printf("%.0f",c);
-
+    for (int i=1;i<=10;i+=2)
+    {
+        printf("%d ",i);
+    }
 
 }
