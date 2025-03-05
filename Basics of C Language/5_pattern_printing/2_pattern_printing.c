@@ -90,7 +90,7 @@ for (int i=1;i<=5;i++)
     {
         printf("*");
     }
-    for (int j=2;j<=i;j++)
+    for (int q=2;q<=i;q++)
     {
         printf("*");
     }
