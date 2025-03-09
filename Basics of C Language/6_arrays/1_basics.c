@@ -63,4 +63,46 @@ int main()
     // accessing the elements of array
     printf("the value of marks[0] is %d\n",marks[0]);
 
+
+    int students_marks[5];
+    int marks_sum=0,average_marks;
+    for (int i=0;i<=5;i++)
+    {
+        printf("Enter the marks of the student %d: ",i+1);
+        scanf("%d",&students_marks[i]);
+    }
+    for (int i=0;i<=5;i++)
+    {
+        marks_sum+=students_marks[i];
+    }
+    average_marks=marks_sum/6;
+    printf("The average marks of the students is %d\n",average_marks);
+    printf("The sum of marks of the students is %d\n",marks_sum);
+
+
+
+    int input_no;
+    printf("Enter the size of array: \n ");
+    scanf("%d",&input_no);
+    int even_odd[input_no];
+    int even_count=0;
+    int odd_count=0;
+    for (int i=0;i<input_no;i++)
+    {
+        printf("Enter the value of element %d :\n ",i+1);
+        scanf("%d",&even_odd[i]);
+        if (even_odd[i]%2==0)
+        {
+            even_count++;
+        
+        }
+        else 
+        {
+            odd_count++;
+        }
+    }
+  
+    printf("Total even numbers are %d\n",even_count);
+    printf("Total odd numbers are %d\n",odd_count);
+    
 } 

@@ -11,5 +11,6 @@
             "addWords": true,
             "scope": "workspace"
         }
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
