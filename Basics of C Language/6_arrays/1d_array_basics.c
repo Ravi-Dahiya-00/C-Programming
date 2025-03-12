@@ -47,7 +47,11 @@ int main()
     printf("Enter the size of array: ");
     scanf("%d",&n);
     int input_array[n];
-    for (int i=1;i<=n;i++)
+
+    printf("%d\n",sizeof(input_array));                         // this will give memory size of complete array
+    printf("%d\n",sizeof(input_array[0]));                      //this will give memory size of one element 
+
+    for (int i=0;i<=n;i++)
     {
         printf("Enter the value of element input_array[%d]: ",i);
         scanf("%d",&input_array[i]);
@@ -66,7 +70,7 @@ int main()
 
     int students_marks[5];
     int marks_sum=0,average_marks;
-    for (int i=0;i<=5;i++)
+    for (int i=0;i<5;i++)
     {
         printf("Enter the marks of the student %d: ",i+1);
         scanf("%d",&students_marks[i]);
@@ -75,11 +79,21 @@ int main()
     {
         marks_sum+=students_marks[i];
     }
-    average_marks=marks_sum/6;
+    average_marks=marks_sum/5;
     printf("The average marks of the students is %d\n",average_marks);
     printf("The sum of marks of the students is %d\n",marks_sum);
 
 
+
+
+
+
+
+
+
+
+    // even odd finding code in an array
+    
 
     int input_no;
     printf("Enter the size of array: \n ");
@@ -105,4 +119,41 @@ int main()
     printf("Total even numbers are %d\n",even_count);
     printf("Total odd numbers are %d\n",odd_count);
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // finding the sum of two array elements
+
+
+    int first_arr[5];
+    int sec_arr[5];
+  
+    for (int i=0;i<5;i++)
+    {
+      printf("Enter the value of element %d of first array : \n",i+1);
+      scanf("%d",&first_arr[i]);
+    }
+  
+    for (int i=0;i<5;i++)
+    {
+      printf("Enter the value of element %d of second array : \n",i+1);
+      scanf("%d",&sec_arr[i]); 
+    }
+  
+    for (int i=0;i<5;i++)
+    {
+      printf("\nSum of %dst elements of first and second array is ",i+1);
+      printf("%d",first_arr[i]+sec_arr[i]);
+    }
 } 

@@ -218,7 +218,6 @@ for (int i=1;i<=5;i++)
 
 
 
-
 // blank rectangle pattern
 printf("blank rectangle pattern\n");
 int n,m;
