@@ -2,12 +2,14 @@
 #include <string.h>
 
 int main() {
-    char str[] = "Hello\nWorld";
+    for (int i=1;i<=5;i++)
+    {
+        for (int j=5;j>=i;j--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
 
 
-    // Removing the newline character
-    str[strcspn(str, "\n")] = 0;
-
-    printf("Processed String: %s", str)
-    return 0;
 }

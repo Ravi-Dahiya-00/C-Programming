@@ -65,7 +65,7 @@ printf("star triangle pattern invert\n");
 
 
 
-printf("no pattern printing with counting\n");
+printf("no. pattern printing with counting\n");
 
 // no pattern printing with counting
     
