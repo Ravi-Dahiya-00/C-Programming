@@ -39,7 +39,7 @@ int main()
     // there is no bound checking in c , so we can access the elements of array which are not present
      printf("the value of marks[5] is %d\n",marks[56]); // this will give garbage value
 
-
+ 
 
 // run time initialization
 
@@ -60,7 +60,7 @@ int main()
 
 
 // memory allocation of array
-    // Address of arr[i]=Base Address+(i×Size of Data Type)
+    // Address of arr[i]= Base Address + (i×Size of Data Type)
 
 
 
@@ -118,7 +118,7 @@ int main()
   
     printf("Total even numbers are %d\n",even_count);
     printf("Total odd numbers are %d\n",odd_count);
-    
+
 
 
 

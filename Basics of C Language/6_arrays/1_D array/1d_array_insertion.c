@@ -17,6 +17,8 @@ int main() {
     // Number to be inserted in an array
     printf(" Enter number to be inserted \n");
     scanf("%d", &num);
+
+
     for( i = n; i >= pos; i--) {
         arr[i] = arr[i-1];
     }
@@ -24,7 +26,7 @@ int main() {
     arr[pos-1] = num;
    
     //Increment the size of an array
-    n++;
+    // n++;
     printf(" Array after inserting new element \n");
     
     //Array after inserting new element
