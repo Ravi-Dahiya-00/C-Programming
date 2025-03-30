@@ -21,16 +21,66 @@ int main()
     }
 
 
+else 
+{
+    int arr1[m][n];
 
-    for (int i=0)
+    printf("\nEnter elements for 1st matrix: ")
+
+    for (int i=0;i<m;i++)
+    {
+        for (int j=0;j<n;j++)
+        {
+        printf("Enter the value of %d %d element for 1st matrix: ",i,j);
+            scanf("%d",&arr1[i][j]);
+        }
+    }
+
+     
+    int arr2[x][y];
+
+    printf("\nEnter elements for 2nd matrix: ")
+
+    for (int i=0;i<x;i++)
+    {
+        for (int j=0;j<y;j++)
+        {
+        printf("Enter the value of %d %d element for 2nd matrix: ",i,j);
+            scanf("%d",&arr2[i][j]);
+        }
+    }
 
 
 
 
 
+    int s=n;
+
+    int multiple_matrix[m][y];
+    for (int i=0;i<m;i++)
+    {
+        for (int j=0;j<y;j++)
+        {
+            multiple_matrix[i][j]=0;
+            for (int k=0;k<s;k++)
+            {
+                multiple_matrix[i][j]+=arr1[i][k]*arr2[k][j];
+            }
+        }
+    }
 
 
+    for (int i=0;i<m;i++)
+    {
+        for (int j=0;j<y;j++)
+        {
+            printf("%d ",multiple_matrix[i][j]);
+        }
+        printf("\n");
+    }
 
+}
 
-
+    return 0;
+    
 }
