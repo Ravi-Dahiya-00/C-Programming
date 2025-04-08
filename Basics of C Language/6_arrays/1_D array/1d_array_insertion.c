@@ -1,37 +1,48 @@
 #include <stdio.h>
+#define MAX_SIZE 100  // Define a constant for clarity
+
 int main() {
-    int n, pos, arr[100], i, num;
-    printf(" Enter the size of an array (Max 100) \n");
-    scanf( "%d", &n);
-    printf( " Enter the element of an array \n");
-    
-    //Input value of an array
-    for(i = 0; i < n; i++) {
+    int n, pos, arr[MAX_SIZE], i, num;
+
+    printf("Enter the size of an array (Max %d): ", MAX_SIZE);
+    scanf("%d", &n);
+
+    // Check if array size is valid
+    if (n <= 0 || n > MAX_SIZE) {
+        printf("Invalid size! Size must be between 1 and %d.\n", MAX_SIZE);
+        return 1;  // Exit with error
+    }
+
+    printf("Enter the elements of the array:\n");
+    for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    
-    //Position to insert a new element
-    printf(" Enter the position \n");
+
+    printf("Enter the position to insert (1 to %d): ", n + 1);
     scanf("%d", &pos);
-    
-    // Number to be inserted in an array
-    printf(" Enter number to be inserted \n");
+
+    // Validate position
+    if (pos < 1 || pos > n + 1) {
+        printf("Invalid position! Position must be between 1 and %d.\n", n + 1);
+        return 1;  // Exit with error
+    }
+
+    printf("Enter the number to be inserted: ");
     scanf("%d", &num);
 
+    // Shift elements to the right (start from the end)
+    for (i = n - 1; i >= pos - 1; i--) {
+        arr[i + 1] = arr[i];
+    }
 
-    for( i = n; i >= pos; i--) {
-        arr[i] = arr[i-1];
+    // Insert the new element
+    arr[pos - 1] = num;
+    n++;  // Update size after insertion
+
+    printf("Array after inserting new element:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d ", arr[i]);  // Add space for readability
     }
-    
-    arr[pos-1] = num;
-   
-    //Increment the size of an array
-    // n++;
-    printf(" Array after inserting new element \n");
-    
-    //Array after inserting new element
-    for( i = 0; i < n; i++) {
-        printf("%d", arr[i]);
-    }
+
     return 0;
 }

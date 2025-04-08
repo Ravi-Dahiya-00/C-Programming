@@ -2,7 +2,7 @@
 
 int main()
 {
-    // int name_of_array[row_size][column_size];
+    // int name_of_array[row_size][column_size];  
 
     int marks_subject_wise[5][10];
 

@@ -8,8 +8,10 @@
 
 // if we are making the function after the main function then we should declare the function before the main function
 void square(int a);                         //function declaration
+                        // in function declaration it is necessary to write the data type and no of arguments , it is not necessary to write the argument 
+// if we will not declare this function here we will get warning or some error : implicit declaration of function and data type is always int 
 
-//function defination 
+//function defintion 
 void sum()                                 //// the function is called by the function name and the function name is followed by the parenthesis
 {
     int a,b;
@@ -44,7 +46,11 @@ int main()
 }
 
 
-void square(int a)                                 //return type is from type of arguments
+
+         
+// function defination
+
+void square(int a)                                 //return type is from type of arguments 
 {
     printf("The square of the number is %d\n",a*a);
 }

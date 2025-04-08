@@ -37,7 +37,7 @@ int main()
     // declared a array of size 5 and initialized it with 5 values
 
     // there is no bound checking in c , so we can access the elements of array which are not present
-     printf("the value of marks[5] is %d\n",marks[56]); // this will give garbage value
+     printf("the value of marks[56] is %d\n",marks[56]); // this will give garbage value
 
  
 
@@ -48,8 +48,8 @@ int main()
     scanf("%d",&n);
     int input_array[n];
 
-    printf("%d\n",sizeof(input_array));                         // this will give memory size of complete array
-    printf("%d\n",sizeof(input_array[0]));                      //this will give memory size of one element 
+    printf("size of array is : %d\n",sizeof(input_array));                         // this will give memory size of complete array
+    printf("size of one element of array is :%d\n",sizeof(input_array[0]));                      //this will give memory size of one element 
 
     for (int i=0;i<=n;i++)
     {
@@ -66,6 +66,12 @@ int main()
 
     // accessing the elements of array
     printf("the value of marks[0] is %d\n",marks[0]);
+
+
+
+
+
+
 
 
     int students_marks[5];
@@ -153,7 +159,7 @@ int main()
   
     for (int i=0;i<5;i++)
     {
-      printf("\nSum of %dst elements of first and second array is ",i+1);
+      printf("\nSum of %d element of first and second array is ",i+1);
       printf("%d",first_arr[i]+sec_arr[i]);
     }
 } 

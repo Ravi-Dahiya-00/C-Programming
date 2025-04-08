@@ -10,13 +10,23 @@ int main() {
         scanf("%d", &arr[i]);
     }
     
+    printf("Original array :\n");
+    for (int i=0;i<array_size;i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    printf("\nsize of original array : %d\n",array_size);
+
+    
     printf("Enter position to delete an element\n");
     scanf("%d", &pos);
     
     //Check valid delete position    
     if(pos < 0 || pos > array_size ) {
         printf("Invalid position");    
-    } else {
+    }
+    
+    else {
         
         //Traverse an array
 
@@ -26,6 +36,10 @@ int main() {
         }
         //Decrement the size of an array
         array_size--;
+
+
+
+        printf("size of array after removing 1 element : %d\n",array_size);
 
         printf("Array after deleting an element\n");
         for(i = 0; i < array_size; i++) {
