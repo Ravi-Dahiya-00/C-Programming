@@ -40,6 +40,8 @@ int main()
         printf("Pointer p holds: %p\n", p);   // same as &p
         
 
+
+
         int c;
         c=*p;
 
@@ -53,6 +55,11 @@ int main()
         printf("Value of a after changing: %d\n",a);
         printf("Value of p after changing: %p\n",p);
 
+
+
+
+
+        
         int b=5;
         int *q;
         q=&b;
