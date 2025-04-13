@@ -23,9 +23,10 @@ int main()
 
 else 
 {
+    // initializing array1 with its element 
     int arr1[m][n];
 
-    printf("\nEnter elements for 1st matrix: ")
+    printf("\nEnter elements for 1st matrix: ");
 
     for (int i=0;i<m;i++)
     {
@@ -36,10 +37,10 @@ else
         }
     }
 
-     
+    // initializing array2 with its element 
     int arr2[x][y];
 
-    printf("\nEnter elements for 2nd matrix: ")
+    printf("\nEnter elements for 2nd matrix: ");
 
     for (int i=0;i<x;i++)
     {
@@ -56,15 +57,19 @@ else
 
     int s=n;
 
-    int multiple_matrix[m][y];
-    for (int i=0;i<m;i++)
+    // 2*3
+    // 3*4
+
+    // multiplying two matrices
+    int multiple_matrix[m][y];         //2*4
+    for (int i=0;i<m;i++)            //m=2
     {
-        for (int j=0;j<y;j++)
+        for (int j=0;j<y;j++)            //y=4
         {
-            multiple_matrix[i][j]=0;
-            for (int k=0;k<s;k++)
+            multiple_matrix[i][j]=0;  
+            for (int k=0;k<s;k++)          //s=3
             {
-                multiple_matrix[i][j]+=arr1[i][k]*arr2[k][j];
+                multiple_matrix[i][j]+= arr1[i][k]*arr2[k][j];
             }
         }
     }

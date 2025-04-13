@@ -4,11 +4,11 @@ int main()
 {
     // int name_of_array[row_size][column_size];  
 
+    // initialization of 2d arrays
     int marks_subject_wise[5][10];
 
-    // initialization of 2d arrays
 
-    // initialization while compile time error 
+    // initialization while compile time  
     int a[2][3]={{1,2,3},{1,2,3}};      
     // two rows       ,        three column in 1 row 
 

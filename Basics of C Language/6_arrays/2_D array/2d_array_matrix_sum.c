@@ -27,6 +27,8 @@ else
     int result[m][n];
     int arr1[m][n];
 
+
+    // taking input for array1
     for (int i=0;i<m;i++)
     {
         for (int j=0;j<n;j++)
@@ -37,7 +39,7 @@ else
     }
 
 
-   
+    // taking input for array2
     int arr2[x][y];
 
     for (int i=0;i<x;i++)
@@ -55,7 +57,7 @@ else
     
 
     
-    
+    // adding array1 and array2
         for (int i=0;i<m;i++)
         {
             for (int j=0;j<n;j++)
@@ -66,6 +68,7 @@ else
     
 
 
+    // printing the result after adding two array elements
     for (int i=0;i<m;i++)
     {
         for (int j=0;j<n;j++)

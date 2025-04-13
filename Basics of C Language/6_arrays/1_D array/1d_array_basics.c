@@ -145,18 +145,22 @@ int main()
     int first_arr[5];
     int sec_arr[5];
   
+    // array 1 input 
     for (int i=0;i<5;i++)
     {
       printf("Enter the value of element %d of first array : \n",i+1);
       scanf("%d",&first_arr[i]);
     }
   
+    // array 2 input
     for (int i=0;i<5;i++)
     {
       printf("Enter the value of element %d of second array : \n",i+1);
       scanf("%d",&sec_arr[i]); 
     }
   
+
+    // sum of array1 and array2
     for (int i=0;i<5;i++)
     {
       printf("\nSum of %d element of first and second array is ",i+1);

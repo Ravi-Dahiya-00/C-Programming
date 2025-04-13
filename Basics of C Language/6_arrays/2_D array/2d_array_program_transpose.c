@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {
+
     int m,n;
     printf("Enter no of rows:");
     scanf("%d",&m);
@@ -9,6 +10,7 @@ int main()
 
     int arr[m][n];
 
+    // taking input for array1
     for (int i=0;i<m;i++)
     {
         for (int j=0;j<n;j++)
@@ -18,6 +20,8 @@ int main()
         }
     }
 
+    // printing the matrix
+    printf("matrix:\n");
     for (int i=0;i<m;i++)
     {
         for (int j=0;j<n;j++)
@@ -29,7 +33,7 @@ int main()
     }
 
 
-
+    // printing the reverse of the matrix
     printf("Reverse of a matrix:\n");
     for (int i=m-1;i>=0;i--)
     {
@@ -43,6 +47,7 @@ int main()
 
 
 
+    // printing the transpose of the matrix
     printf("transpose of a matrix:\n");
     for (int i=0;i<n;i++)
     {

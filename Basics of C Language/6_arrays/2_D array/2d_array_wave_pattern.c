@@ -25,7 +25,7 @@ int main()
 
     // simple wave print row wise 
 
-    printf("\nsimple wave print row wise :");
+    printf("\nsimple wave print row wise :\n");
 
     
 
@@ -55,7 +55,7 @@ int main()
     // wave pattern column wise 
 
 
-    printf("\nwave pattern column wise :");
+    printf("\nwave pattern column wise :\n");
 
 
     for (int j=0;j<n;j++)

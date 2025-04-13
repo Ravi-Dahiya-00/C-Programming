@@ -7,6 +7,8 @@ int main()
     printf("Enter no of columns:");
     scanf("%d",&n);
     
+
+    // taking the array input from the user
     int arr[m][n];
     for (int i=0;i<m;i++)
     {
@@ -19,6 +21,7 @@ int main()
 
 
 
+
     for (int i=0;i<m;i++)
     {
         for (int j=0;j<n;j++)
@@ -27,12 +30,11 @@ int main()
            
         }
         printf("\n%d row element sum : %d",i+1,sum);
-
-
-        
         sum=0;
     }
 
+
+    
     for (int i=0;i<n;i++)
     {
         for (int j=0;j<m;j++)
