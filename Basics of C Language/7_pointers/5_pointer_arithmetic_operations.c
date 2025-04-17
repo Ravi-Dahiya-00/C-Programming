@@ -8,9 +8,12 @@ int main()
     int *p=a;                // array always holds the address of the first element so it is same as a[0]
     int *q=&a[3];
 
+    printf("address of pointer p :%p\n",p);
+    printf("address of pointer q :%p\n",q);
   
     int d=q-p;
     printf("pointer pointer subtraction :%d\n",d);
+  
     // first it will subtract the address of p from address of a , then it will divide the resultant by size of the data type of that pointer
 
 

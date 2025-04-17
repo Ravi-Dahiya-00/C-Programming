@@ -1,6 +1,10 @@
 // A void pointer (also called a generic pointer) is a special type of pointer that can hold the address of any data type, but cannot be dereferenced directly without a type cast.
 
 
+// They are Declared as void*, these are generic pointers that can point to any data type. They’re useful when the data type isn’t known in advance, like in library functions.Before dereferencing, they must be typecast to a specific data type.They provide flexibility but require careful handling.
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 int main()

@@ -14,7 +14,7 @@ int main()
 
 
     // When you add/subtract a number to a pointer, it moves by the size of the data type, not just 1 byte!
-    p+=1;
+    p+=2;
     printf("\n%d\n",*p);
     // it will give any garbage value because we didnot assigned any value at the address of a+2bytes
 
@@ -28,7 +28,7 @@ int main()
 
 // this is useful when we play with arrays and not useful for general purpose arithmetic operations
 
-// here arr is a constant pinter it will always contain base address of the array
+// here arr is a constant pointer it will always contain base address of the array
 
 int arr[] = {10, 20, 30, 40, 50};
 int *ptr1 = arr;

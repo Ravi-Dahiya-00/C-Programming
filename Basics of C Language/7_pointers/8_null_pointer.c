@@ -28,11 +28,16 @@ int main()
 
 
 
+    int a=10;
     // To check for errors in memory allocation:
     int *ptr3 = (int *)malloc(sizeof(int));                         // this malloc will allocate memory dynamically of int means 4 bytes 
                                                                     // and malloc returns void pointer so we are type casting it into int by int*
     if (ptr3 == NULL) {
         printf("Memory allocation failed!\n");
+    }
+    else
+    {
+        printf("\n%d",*ptr3);
     }
     
 }

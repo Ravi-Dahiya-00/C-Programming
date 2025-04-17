@@ -12,7 +12,7 @@ int main()
 
 
     int **q=&p;
-    // here 1 * refers that we are here going to store the address of a pointer variable and q tells it is a pointer, thats why ** are used in pointers
+    // here 1 * refers that we are here going to store the address of a pointer variable and *q tells it is a pointer, thats why ** are used in pointers
     // q is a pointer to a pointer to an integer.
 
 // It stores the address of pointer p.
@@ -37,7 +37,7 @@ int main()
 
 
 
-    // ***r through a triple pointer
+    // ***r through a triple pointer,here it means it holds the address value of a double pointer
 
 
     int ***r=&q;

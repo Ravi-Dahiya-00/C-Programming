@@ -8,7 +8,7 @@ void changeValue(int x) {
 
 
 // &r → passes the address of a to the function.
-// int *r → r is a pointer that stores that address.
+// int *r → r is a pointer that stores the address of the given parameter.
 // *r = 3 → changes the value at that address → modifies the original variable.
 
 

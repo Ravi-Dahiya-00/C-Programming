@@ -10,7 +10,7 @@ int main()
 
     q=p;
     // here we have assigned the value of p to q and it was the address of a
-    // so q is also equal to a
+    // so q is also equal to a , it will take memory address because q is also a pointer
 
     printf("a: %d %d %d",a,*p,*q);
 
@@ -26,17 +26,26 @@ int main()
     // then it will catch error
 
 
-    q=&b;
+    q=&b;      // 10-->20
 
     printf("\nValue after address of b in q:%d",*q);
 
     *q=*p;
+
+
     // here *p means address of a , so here *q will also be assigned with the value at address of a 
     // but here the value of b will also be changed *q refers to address of b and q is now assigned with a
     // b=a
 
     printf("\nb: %d %d %d",b,*p,*q);
     // so now value of b is no more 20 it is 10
+
+
+    int *pt=p;
+        // There are two ways to initialize a pointer variable.
+    //  You can use reference operator & to get memory location of a variable or you can also directly assign one pointer variable to other pointer variable.
+
+
 
 
 

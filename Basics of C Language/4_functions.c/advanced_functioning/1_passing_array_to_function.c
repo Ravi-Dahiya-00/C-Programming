@@ -10,7 +10,7 @@ int main()
     average=avg(arr1,5);                    //here we can also pass the size of array if we want to send it is optional
     printf("%d",average);
 
-    // if we will write here size of array then it will print 20 because it will 4 * 5 bytes
+    // if we will write here size of array then it will print 20 because it will 4 * 5 bytes , complete size of array
     printf("Size of array:%d",sizeof(arr1));
 }
 
