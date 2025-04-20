@@ -1,16 +1,13 @@
 #include <stdio.h>
+
 int main()
 {
-    
-    int a=10,b=20;
-    int *p,*q;
+    char str[100];
 
-    p=&a;
-    *q=&p;
-    // here we are giving the address of a to p
-  
-    *q=25;
-    printf("%d",a);
+    printf("Enter a string (including spaces): ");
+    gets(str);  // ✅ Correct usage (no format specifier)
 
+    printf("You entered: %s\n", str);
 
+    return 0;
 }
