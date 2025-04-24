@@ -1,80 +1,72 @@
 #include <stdio.h>
-int main()
-{
-    int m,n;
-    printf("Enter no of rows:");
-    scanf("%d",&m);
-    printf("Enter no of columns:");
-    scanf("%d",&n);
 
+int main() {
+    int m, n;
 
+    // Step 1: Input number of rows and columns
+    printf("Enter number of rows: ");
+    scanf("%d", &m);
+    printf("Enter number of columns: ");
+    scanf("%d", &n);
 
-
-
+    // Step 2: Declare a 2D array with dimensions m x n
     int arr[m][n];
-    for (int i=0;i<m;i++)
-    {
-        for (int j=0;j<n;j++)
-        {
-        printf("Enter the value of %d %d element: ",i,j);
-        scanf("%d",&arr[i][j]);
+
+    // Step 3: Input matrix elements from user
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("Enter the value of element at (%d, %d): ", i, j);
+            scanf("%d", &arr[i][j]);
         }
     }
 
+    // --------------------------------------------
+    // Step 4: Simple Wave Print - Row Wise
+    // --------------------------------------------
+    printf("\nSimple wave print row wise:\n");
 
-
-    // simple wave print row wise 
-
-    printf("\nsimple wave print row wise :\n");
-
-    
-
-    for (int i=0;i<m;i++)
-    {
-        if (i%2==0)
-        {
-            for (int j=0;j<n;j++)
-            {
-                printf("%d ",arr[i][j]);
+    /*
+     * Even rows (i % 2 == 0): print left to right (0 to n-1)
+     * Odd rows (i % 2 != 0): print right to left (n-1 to 0)
+     */
+    for (int i = 0; i < m; i++) {
+        if (i % 2 == 0) {
+            // Print left to right
+            for (int j = 0; j < n; j++) {
+                printf("%d ", arr[i][j]);
             }
-            printf("\n");
-        }
-        else 
-        {
-            for (int j=n-1;j>=0;j--)
-            {
-                printf("%d ",arr[i][j]);
+        } else {
+            // Print right to left
+            for (int j = n - 1; j >= 0; j--) {
+                printf("%d ", arr[i][j]);
             }
-            printf("\n");
         }
+        printf("\n");  // Move to next line after each row
     }
 
+    // --------------------------------------------
+    // Step 5: Wave Pattern - Column Wise
+    // --------------------------------------------
+    printf("\nWave pattern column wise:\n");
 
-
-
-    // wave pattern column wise 
-
-
-    printf("\nwave pattern column wise :\n");
-
-
-    for (int j=0;j<n;j++)
-    {
-        if (j%2==0)
-        {
-            for (int i=m-1;i>=0;i--)
-            {
-                printf("%d ",arr[i][j]);
+    /*
+     * Even columns (j % 2 == 0): print bottom to top (m-1 to 0)
+     * Odd columns (j % 2 != 0): print top to bottom (0 to m-1)
+     */
+    for (int j = 0; j < n; j++) {
+        if (j % 2 == 0) {
+            // Print bottom to top
+            for (int i = m - 1; i >= 0; i--) {
+                printf("%d ", arr[i][j]);
             }
-            printf("\n");
-        }
-        else 
-        {
-            for (int i=0;i<m;i++)
-            {
-                printf("%d ",arr[i][j]);
+        } else {
+            // Print top to bottom
+            for (int i = 0; i < m; i++) {
+                printf("%d ", arr[i][j]);
             }
-            printf("\n");
         }
+        printf("\n");  // Move to next line after each column
     }
+
+    return 0;
 }

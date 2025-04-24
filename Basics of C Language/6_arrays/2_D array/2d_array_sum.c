@@ -1,50 +1,42 @@
 #include <stdio.h>
-int main()
-{
-    int m,n,sum=0,col_sum=0;
-    printf("Enter no of rows:");
-    scanf("%d",&m);
-    printf("Enter no of columns:");
-    scanf("%d",&n);
-    
 
-    // taking the array input from the user
+int main() {
+    int m, n, sum = 0, col_sum = 0;
+
+    // Step 1: Input the number of rows and columns
+    printf("Enter number of rows: ");
+    scanf("%d", &m);
+    printf("Enter number of columns: ");
+    scanf("%d", &n);
+
+    // Step 2: Declare a 2D array with m rows and n columns
     int arr[m][n];
-    for (int i=0;i<m;i++)
-    {
-        for (int j=0;j<n;j++)
-        {
-        printf("Enter the value of %d %d element: ",i,j);
-        scanf("%d",&arr[i][j]);
+
+    // Step 3: Take input for each element of the matrix
+    for (int i = 0; i < m; i++) {                // Loop through each row
+        for (int j = 0; j < n; j++) {            // Loop through each column
+            printf("Enter the value of element at (%d, %d): ", i, j);
+            scanf("%d", &arr[i][j]);             // Input element
         }
     }
 
-
-
-
-    for (int i=0;i<m;i++)
-    {
-        for (int j=0;j<n;j++)
-        {
-            sum+=arr[i][j];
-           
+    // Step 4: Calculate and print the sum of elements row-wise
+    for (int i = 0; i < m; i++) {
+        sum = 0;                                 // Reset sum for each row
+        for (int j = 0; j < n; j++) {
+            sum += arr[i][j];                    // Add each element in the row
         }
-        printf("\n%d row element sum : %d",i+1,sum);
-        sum=0;
+        printf("\nSum of elements in row %d: %d", i + 1, sum);
     }
 
-
-    
-    for (int i=0;i<n;i++)
-    {
-        for (int j=0;j<m;j++)
-        {
-            col_sum+=arr[j][i];
+    // Step 5: Calculate and print the sum of elements column-wise
+    for (int i = 0; i < n; i++) {
+        col_sum = 0;                             // Reset sum for each column
+        for (int j = 0; j < m; j++) {
+            col_sum += arr[j][i];                // Add each element in the column
         }
-        printf("\n%d column element sum: %d",i+1,col_sum);
-        col_sum=0;
+        printf("\nSum of elements in column %d: %d", i + 1, col_sum);
     }
 
-
-
+    return 0; // End of program
 }

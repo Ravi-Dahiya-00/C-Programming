@@ -15,7 +15,7 @@ int main()
     int a=10;
     // this type of variables contains three things name,value,address
 
-
+  
     // In C, a pointer is a variable that stores the memory address of another variable.
     // it is also known as derived data type
 
@@ -66,6 +66,7 @@ int main()
 
         printf("Value of a after changing: %d\n",a);
         printf("Value of p after changing: %p\n",p);                   //memory address will remain same
+
 
 
 

@@ -7,7 +7,6 @@ void changeValue(int x) {
 
 
 
-// &r → passes the address of a to the function.
 // int *r → r is a pointer that stores the address of the given parameter.
 // *r = 3 → changes the value at that address → modifies the original variable.
 
@@ -41,7 +40,7 @@ int main()
 
 
 
-
+// &r → passes the address of r to the function.
 
     // In Call by Reference, we pass the address of a variable to a function using pointers.
 // This allows the function to modify the original variable directly.

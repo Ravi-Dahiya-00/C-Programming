@@ -26,6 +26,8 @@ int main()
     // then it will catch error
 
 
+
+    
     q=&b;      // 10-->20
 
     printf("\nValue after address of b in q:%d",*q);

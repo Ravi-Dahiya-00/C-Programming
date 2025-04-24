@@ -8,12 +8,13 @@
 
 int* arr(int *ptr2)
 {
+    // this static means it is initalized only once it cannot be initialized again and can be used anywhere in the code
         static int a=4;
         ptr2=&a;
         printf("value in local variable : %d",*ptr2);
 
         return &a;
-        // it is giving address of 
+        // it is giving address of a
     }
 
 int main()

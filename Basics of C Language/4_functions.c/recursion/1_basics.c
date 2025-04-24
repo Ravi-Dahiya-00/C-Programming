@@ -27,7 +27,7 @@ int main()
 }
 
 
-// first n=2 , it doesnot follow else condition so it will go to else and print 2 then we are now in 1st loop of recursion now in 1st loop 
+// first n=2 , it doesnot follow if condition so it will go to else and print 2 then we are now in 1st loop of recursion now in 1st loop 
 // we are calling the same function recursion1 it will again start the function from starting and now the value of n is 1 ,at this time we are in 2nd loop, so it also doesnot 
 // follow if condition so it print the value 1 then again call the recursion1 function , now we are in 3rd loop now if condition is true because 
 // n value is 0 so it will return , return to its caller and the caller is 3rd loop in else condition , so now it will go and its value is 1 

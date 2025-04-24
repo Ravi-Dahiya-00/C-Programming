@@ -37,7 +37,9 @@ int main()
     }
     else
     {
+        *ptr3 = 42;  // Initialize the allocated memory
         printf("\n%d",*ptr3);
+        free(ptr3);
     }
     
 }

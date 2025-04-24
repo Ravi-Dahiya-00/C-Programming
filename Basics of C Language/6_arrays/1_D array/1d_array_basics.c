@@ -11,7 +11,7 @@ int main()
     // declared a array of size 5 and initialized it with 5 values
 
     // int a[0];  this is wrong , array size should be greater than 0
-    //  int a[0]={10}; this is wrong , array size should be greater than 0
+    // int a[0]={10}; this is wrong , array size should be greater than 0
 
     int a[4*4]; // this is correct , array size can be any positive integer
 

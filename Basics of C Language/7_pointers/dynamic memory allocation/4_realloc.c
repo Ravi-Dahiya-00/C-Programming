@@ -1,7 +1,7 @@
 // realloc() stands for re-allocation. It allows you to:
 // Change the size of memory that was previously allocated using malloc() or calloc().
 // Increase or decrease the size of the allocated memory block dynamically during runtime.
-
+#include <stdlib.h>
 #include <stdio.h>
 int main()
 {
@@ -33,6 +33,6 @@ int main()
         printf("%d ", arr[i]);
     }
 
-    // Free the m-emory
+    // Free the memory
     free(arr);
 }

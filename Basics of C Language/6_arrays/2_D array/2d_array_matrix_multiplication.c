@@ -57,8 +57,8 @@ else
 
     int s=n;
 
-    // 2*3
-    // 3*4
+    // 2*3     m n
+    // 3*4     x y
 
     // multiplying two matrices
     int multiple_matrix[m][y];         //2*4
