@@ -155,20 +155,25 @@ int main(){
                     // in past it was used to store large values when int was not capable of holding large values
                 // it takes 8bytes
         long long_number=12342323;
-        printf("\n%d",long_number);
+        printf("\n%ld",long_number);
 
 
     // long long data type:
                             // it can store so much big values 
         // it takes 
         long long longest_number=1238998931;
-        printf("\n%d",longest_number);
+        printf("\n%lld",longest_number);
         
+
+
+
+
+        // %d → for int
+
+        // %ld → for long int
+
+        // %lld → for long long int
 
     return 0;
 
 }
-
-
-
-
