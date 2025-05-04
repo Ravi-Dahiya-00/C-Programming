@@ -42,10 +42,11 @@ int main(){
     scanf("%d",&operator2);
     
 
-    int operators_quotient,operator_multiplication,operator_reminder;
-    operators_quotient=operator1/operator2;
-    operator_multiplication=operators_quotient*operator2;
-    operator_reminder=operator1-operator_multiplication;
+    int operators_quotient, operator_multiplication, operator_reminder;
+    operators_quotient = operator1 / operator2;
+    operator_multiplication = operators_quotient * operator2;
+    operator_reminder = operator1- operator_multiplication;
+    
     printf("your reminder is : %d",operator_reminder);
 
 

@@ -1,34 +1,34 @@
 #include <stdio.h>
-#include <math.h>
+#include <string.h>
+int main()
+{
+    // char str[30]="Ravi Yadav";
 
-int main() {
-    int num, originalNum, remainder, result = 0, n = 0;
+    // strlwr(s1);
+    // strupr(s1);      this functions are not in c in new version
 
-    printf("Enter an integer: ");
-    scanf("%d", &num);
+    char str[30];
+    printf("enter a string: \n");
+    gets(str);
+    // for lowercase 
+    for (int i=0;str[i]!='\0';i++)
+    {
+        if (str[i]>='A' && str[i]<='Z')
+        {
+            str[i]+=32;
+        }
+    }
+    printf("lower case : %s\n",str);
 
-    originalNum = num;
 
-    // Count the number of digits
-    while (originalNum != 0) {
-        originalNum /= 10;
-        ++n;
+    // for upper case 
+    for (int i=0;str[i]!='\0';i++)
+    {
+        if (str[i]>='a' && str[i]<='z')
+        {
+            str[i]-=32;
+        }
     }
 
-    originalNum = num;
-
-    // Calculate the sum of the nth power of each digit
-    while (originalNum != 0) {
-        remainder = originalNum % 10;
-        result += pow(remainder, n);
-        originalNum /= 10;
-    }
-
-    // Check if the result equals the original number
-    if (result == num)
-        printf("%d is an Armstrong number.\n", num);
-    else
-        printf("%d is not an Armstrong number.\n", num);
-
-    return 0;
+    printf("upper case : %s\n",str);
 }

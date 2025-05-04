@@ -85,7 +85,7 @@ int main()
                                 // A variable is a type of identifier specifically used to store data.
         
 // Key Differences
-// Aspect	                     Identifier	                                                       Variable
+// Aspect	                              Identifier	                                                       Variable
 // Definition	                    Name used to identify program elements.	                            Named memory location to store data.
 
 // Type                         	Doesn't have a type.                                            	Has a data type (int, float, etc.).
@@ -151,6 +151,11 @@ age_identifier_variable = 25;  // "age" is now a variable holding the value 25.
             #define PI 3.14159 // Define a constant for pi
 
               printf("Value of PI: %f\n", PI);
+              printf("Value of constant: %d\n", constant_example);
+
+
+             
+
 
 
 
@@ -231,6 +236,7 @@ age_identifier_variable = 25;  // "age" is now a variable holding the value 25.
 
 
     float new_float2= 5.0/2;                    // it will give 2.500 because if we one float any of the digit it will bve considered as the float
+    printf("new float value : %f",new_float2);
 
 
 
