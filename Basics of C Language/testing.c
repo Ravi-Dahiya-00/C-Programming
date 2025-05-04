@@ -2,33 +2,19 @@
 #include <string.h>
 int main()
 {
-    // char str[30]="Ravi Yadav";
 
-    // strlwr(s1);
-    // strupr(s1);      this functions are not in c in new version
+    
+    
+    int x = 100, y = 20;
 
-    char str[30];
-    printf("enter a string: \n");
-    gets(str);
-    // for lowercase 
-    for (int i=0;str[i]!='\0';i++)
+    // ❌ Problem: The else statement here belongs to the nearest unmatched if (x == 10), not (x > y)
+    if (x > y)
     {
-        if (str[i]>='A' && str[i]<='Z')
-        {
-            str[i]+=32;
-        }
+        if (x == 10)
+            printf("X is 10\n");
     }
-    printf("lower case : %s\n",str);
+    else
+        printf("Y is greater than X\n");  // This will NOT execute as expected
 
 
-    // for upper case 
-    for (int i=0;str[i]!='\0';i++)
-    {
-        if (str[i]>='a' && str[i]<='z')
-        {
-            str[i]-=32;
-        }
-    }
-
-    printf("upper case : %s\n",str);
 }

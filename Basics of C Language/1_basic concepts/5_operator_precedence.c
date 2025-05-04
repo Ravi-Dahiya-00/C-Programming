@@ -8,8 +8,8 @@ int main()
 //            Unary (+, -)	               High	                             Right-to-left
 //            *, /, %                 	   Higher	                         Left-to-right
 //            +, -	                       Medium                        	Left-to-right
-//         <, >, <=, >=	                   Lower                        	Left-to-right
-//         &&	                           Lower than relational        	Left-to-right
+//           <, >, <=, >=	                   Lower                        	Left-to-right
+//           &&	                           Lower than relational        	Left-to-right
 //              `	                                                      	`
 //         =	                           Lowest (Assignment)           	Right-to-left
 //          , (Comma)	                   Lowest                       	Left-to-right

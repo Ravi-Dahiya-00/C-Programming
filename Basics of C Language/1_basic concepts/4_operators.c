@@ -253,11 +253,15 @@ int main() {
 
 
 
-    // 4. Bitwise Operators
-    // These operate at the bit level of the numbers.
-    // bitwise operators in C programming language enable MANIPULATION OF DATA AT BINARY LEVEL , allowing for efficient bit-level programming.
-    // these operators perform operations on individual bits , 0s and 1s , making them particularly useful in numerical computation for swift and resource-efficient calculation.
-    // bitwise operations are often more efficient then conventional arithmetic operations , especially when dealing with LOW-LEVEL PROGRAMMING or RESOURCE-CONSTRAINED ENVIORNMENT.
+    /* 4. Bitwise Operators
+     These operate at the bit level of the numbers.
+    
+    bitwise operators in C programming language enable MANIPULATION OF DATA AT BINARY LEVEL , allowing for efficient bit-level programming.
+     
+    these operators perform operations on individual bits , 0s and 1s , making them particularly useful in numerical computation for swift and resource-efficient calculation.
+   
+    bitwise operations are often more efficient then conventional arithmetic operations , especially when dealing with LOW-LEVEL PROGRAMMING or RESOURCE-CONSTRAINED ENVIORNMENT.
+    */
 
 
     
@@ -265,27 +269,28 @@ int main() {
 
 // Bitwise operators are used to compare (binary) numbers:
 
-        //    '''Operator	Name	                Description	                                                               Example	
+    /*  '''Operator     	Name	                Description	                                                               Example	
 
 
-        //    & 	AND	                              Sets each bit to 1 if both bits are 1                                    x & y	
-        //                                     if one is zero then it will give zero.
+            &       	AND	                              Sets each bit to 1 if both bits are 1                                    x & y	
+                                                    if one is zero then it will give zero.
 
-        //     |	OR	                              Sets each bit to 1 if one of two bits is 1                    	         x | y	
-        //                                         only give 0 when both are zero.
+            |	        OR	                              Sets each bit to 1 if one of two bits is 1                    	         x | y	
+                                                         only give 0 when both are zero.
 
-        //    ^	XOR	                              Sets each bit to 1 if only one of two bits is 1	                         x ^ y	
-        //                                         it will give zero when both are 0 or 1 in same row
+           ^        	XOR	                              Sets each bit to 1 if only one of two bits is 1	                         x ^ y	
+                                                     it will give zero when both are 0 or 1 in same row
 
-        //     ~	NOT(Compliment)                              	Inverts all the bits	                                       ~x	
-        //                                                 0 to 1 and 1 to 0
+          ~         	NOT(Compliment)                              	Inverts all the bits	                                       ~x	
+                                                                0 to 1 and 1 to 0
 
-        //     <<	Zero fill left shift          	  Shift left by pushing zeros in from the right and \
-                                            let the leftmost bits fall off	                                         x << 2	        \
-\
-             >>	Signed right shift	          Shift right by pushing copies of the leftmost bit in from the left, \
-                   \
-                                                  and let the rightmost bits fall off                                       	x >> 2	'''
+          <<    	Zero fill left shift          	  Shift left by pushing zeros in from the right and \
+                                                       let the leftmost bits fall off	                                         x << 2	        
+
+           >>	        Signed right shift	          Shift right by pushing copies of the leftmost bit in from the left, 
+                                                    and let the rightmost bits fall off                                       	x >> 2	'''
+
+                                                                        */
 
 
     printf("Bitwise Operators:\n");
@@ -370,6 +375,7 @@ int main() {
 //     b   =    0   1    0    0                #4 in binary form
 
 //    a^b  =    0   0    0    1                a^b in binary form
+
 //it will give one only when both bits are different in same row.
 //gives zero when both are same bits 
 //now convert this 0001 into decimal form 

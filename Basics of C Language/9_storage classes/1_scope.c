@@ -24,5 +24,6 @@ int main() {
     // Trying to access localInsideShow here would cause an ERROR!
     // printf("%d", localInsideShow);  // ❌ Not allowed
 
+    
     return 0;
 }

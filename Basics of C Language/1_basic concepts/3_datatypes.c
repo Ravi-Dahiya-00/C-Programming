@@ -180,8 +180,9 @@ typedef unsigned int uint;
 
             char new_char[100];
             // this means it can contain upto 100 characters
-            scanf("Enter a long char : %c",&new_char);
-            printf("Long char is : %c",new_char);
+            printf("Enter a long char");
+            scanf("%s",&new_char);
+            printf("Long char is : %s",new_char);        
     
 
 
