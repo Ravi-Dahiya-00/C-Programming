@@ -37,6 +37,7 @@ int main() {
     if(pos <= 0 || pos > array_size ) {
         printf("Invalid position");    
     }
+   
     
     else {
         

@@ -1,4 +1,3 @@
-
 // 🔹 Function with No Argument and No Return Type in C
 // This type of function:
 

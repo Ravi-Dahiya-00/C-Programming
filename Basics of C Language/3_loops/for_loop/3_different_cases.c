@@ -15,7 +15,7 @@ int main()
 
 
 
-
+printf("\ni=%d\n",i);
 
 
 
@@ -30,7 +30,7 @@ printf("hello");
     printf("hello");
 
 
-// output --> heloo           infinite loop
+// output --> hello           infinite loop
 
 
 

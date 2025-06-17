@@ -62,7 +62,7 @@ int main()
         printf("value of c: %d\n",c);
 
 
-        *p=20;
+        *p=20;                                         //value is changed at address at which p is refering so value of a will be changed
 
         printf("Value of a after changing: %d\n",a);
         printf("Value of p after changing: %p\n",p);                   //memory address will remain same

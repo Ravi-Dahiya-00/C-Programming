@@ -6,16 +6,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int* arr(int *ptr2)
+
+int* arr()
 {
     // this static means it is initalized only once it cannot be initialized again and can be used anywhere in the code
-        static int a=4;
-        ptr2=&a;
-        printf("value in local variable : %d",*ptr2);
-
-        return &a;
+    static int a = 4;
+    printf("value in local variable : %d\n", a);
+    return &a;
         // it is giving address of a
-    }
+
+}
+
 
 int main()
 {

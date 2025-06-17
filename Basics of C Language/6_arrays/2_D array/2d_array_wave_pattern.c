@@ -20,12 +20,23 @@ int main() {
         }
     }
 
+
+    for (int i=0;i<m;i++)
+    {
+        for (int j=0;j<n;j++)
+        {
+            printf("%d ",arr[i][j]);
+            
+        }
+        printf("\n");
+    }
+
     // --------------------------------------------
     // Step 4: Simple Wave Print - Row Wise
     // --------------------------------------------
     printf("\nSimple wave print row wise:\n");
 
-    /*
+    /* 
      * Even rows (i % 2 == 0): print left to right (0 to n-1)
      * Odd rows (i % 2 != 0): print right to left (n-1 to 0)
      */

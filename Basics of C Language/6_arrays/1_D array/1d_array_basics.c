@@ -26,11 +26,11 @@ int main()
     // it will have garbage values , as it is not initialized with any values 
 
     int different_initialization[5];
-    different_initialization[0]=10;
-    different_initialization[1]=20;
-    different_initialization[2]=30;
-    different_initialization[3]=40;
-    different_initialization[4]=50;
+    different_initialization[0]=10; 
+    different_initialization[1]=20; 
+    different_initialization[2]=30; 
+    different_initialization[3]=40; 
+    different_initialization[4]=50; 
     // declared a array of size 5 and initialized it with 5 values using index 
     
     char vowels[5]={'a','e','i','o','u'};

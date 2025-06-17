@@ -18,7 +18,7 @@ int main()
 
     // Allocate memory for n integers
     arr = (int *)malloc(n * sizeof(int));
- 
+
     if (arr == NULL) {
         printf("Memory allocation failed!\n");
         return 1;

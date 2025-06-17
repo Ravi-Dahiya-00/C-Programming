@@ -5,6 +5,7 @@
 int main()
 {
     // Type	                                                         Description
+    
 // Null Pointer                                                	Safely points to nothing (NULL)
 // Uninitialized Pointer                                      	Holds garbage address, may cause crash
 
@@ -37,6 +38,7 @@ int main()
     }
     else
     {
+        printf("\n%d",*ptr3);
         *ptr3 = 42;  // Initialize the allocated memory
         printf("\n%d",*ptr3);
         free(ptr3);

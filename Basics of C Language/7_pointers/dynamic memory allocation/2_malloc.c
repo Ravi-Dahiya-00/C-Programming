@@ -22,7 +22,7 @@
 
 int main()
 {
-    int* ptr;
+    int *ptr;
     ptr = (int*) malloc(sizeof(int));  // Allocating memory for 1 integer
 
     if (ptr == NULL) {
@@ -51,7 +51,7 @@ int main()
 
     for (int i=1;i<=n;i++)
     {
-        printf("%d",*(ptr+i));
+        printf("%d ",*(ptr+i));
     }
 
     free(ptr);

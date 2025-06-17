@@ -15,7 +15,7 @@ int main()
     printf("a: %d %d %d",a,*p,*q);
 
 
-          // *q=*p;              this wrong initialization
+          // *q=*p;              this wrong initialization if q has not been inititalized 
 
      // p is correctly initialized with the address of a.
    // BUT q is just declared, not pointing to any valid memory.

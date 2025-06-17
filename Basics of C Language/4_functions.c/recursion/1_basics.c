@@ -22,7 +22,7 @@ void recursion1(int n)
 }
 int main()
 {
-    int n=2;
+    int n=3;
     recursion1(n);
 }
 

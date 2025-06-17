@@ -11,7 +11,7 @@ void square(int a);                         //function declaration
                         // in function declaration it is necessary to write the data type and no of arguments , it is not necessary to write the argument 
 // if we will not declare this function here we will get warning or some error : implicit declaration of function and data type is always int 
 
-//function defination 
+//function defination
 void sum()                                 // the function is called by the function name and the function name is followed by the parenthesis
 {
     int a,b;

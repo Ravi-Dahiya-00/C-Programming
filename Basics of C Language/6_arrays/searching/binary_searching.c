@@ -17,7 +17,7 @@ int main() {
 
     // Step 3: Input target value
     int target;
-    scanf("%d", &target);
+    scanf("%d", &target); 
 
     // Step 4: Initialize binary search boundaries
     int low = 0, high = n - 1, mid;
@@ -48,11 +48,11 @@ int main() {
         // Move search boundaries based on comparison
         if (arr[mid] > target)
         {
-            high = mid - 1;
+            high = mid - 1;  
         } 
         else 
         {
-            low = mid + 1;
+            low = mid + 1;  
         }
     }
 
