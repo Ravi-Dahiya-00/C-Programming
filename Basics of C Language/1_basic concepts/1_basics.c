@@ -302,7 +302,7 @@ age_identifier_variable = 25;  // "age" is now a variable holding the value 25.
 
     puts("Welcome to C programming!");
     // Purpose: Displays a string followed by a newline without /n.
-    
+       
 
 
 
@@ -317,7 +317,7 @@ age_identifier_variable = 25;  // "age" is now a variable holding the value 25.
 
 
     char ch_1 = getchar();
-    // printf("%c",ch_1);
+    printf("%c",ch_1);
     // getchar(): Reads a single character,first given character only.
 
     putchar(ch_1);

@@ -5,9 +5,9 @@ int main() {
 
 
 // three types of operators :
-// 1.Unary operator
-// 2.Binary operator
-// Ternary operator
+                // 1.Unary operator
+                // 2.Binary operator
+                // Ternary operator
 
 
 
@@ -22,7 +22,7 @@ int main() {
                 printf("\n unary minus did this : %d",unary_minus);
                 
                 int d = 7;
-                printf("Unary Operators:\n");
+                printf("\nUnary Operators:\n");
                 printf("Initial value of d: %d\n", d); 
                 printf("After d++ (post-increment): %d\n", d++); // Returns d, then increments
 

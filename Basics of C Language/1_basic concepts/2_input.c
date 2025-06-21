@@ -37,15 +37,15 @@ int main(){
 
     int operator1,operator2;
     printf("\nEnter First Number: ");
-    scanf("%d",&operator1);
+    scanf("%d",&operator1); 
     printf("Enter Second Number: ");
-    scanf("%d",&operator2);
+    scanf("%d",&operator2);  
     
 
     int operators_quotient, operator_multiplication, operator_reminder;
     operators_quotient = operator1 / operator2;
     operator_multiplication = operators_quotient * operator2;
-    operator_reminder = operator1- operator_multiplication;
+    operator_reminder = operator1 - operator_multiplication;
     
     printf("your reminder is : %d",operator_reminder);
 
@@ -65,7 +65,7 @@ int main(){
 
 
 
-     // integer to float 
+     // integer to float
     int given_integer;
     printf("\n enter number of which you want to half:");
     scanf("%d",&given_integer);

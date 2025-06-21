@@ -68,7 +68,7 @@ enum Color { RED, GREEN, BLUE };
 
 
 // 4.Typedef (typedef): Used to create new names for existing data types.
-typedef unsigned int uint;
+typedef unsigned int unit;
 
 
 

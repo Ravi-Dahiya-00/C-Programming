@@ -11,7 +11,7 @@ int main()
     printf("%d",average);
 
     // if we will write here size of array then it will print 20 because it will 4 * 5 bytes , complete size of array
-    printf("Size of array:%d",sizeof(arr1));
+    // printf("Size of array:%d",sizeof(arr1));
 }
 
 int avg(int average[],int a)
@@ -22,7 +22,7 @@ int avg(int average[],int a)
         sum+=average[i];
     }
     final_avg=sum/a;
-    printf("Size of array:%d\n",sizeof(average));
+    // printf("Size of array:%d\n",sizeof(average));
     // here we will get only 4 because average is pointer in the avg function and we will also get a error as it is a pointer
     return final_avg;
 }
